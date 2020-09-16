@@ -1,0 +1,61 @@
+form{
+    margin:50px 0;
+    display:flex;
+    flex-wrap:wrap;
+    padding:15px 0;
+    .field{
+        width:100%;
+        margin-bottom:15px;
+        label{
+            text-transform:uppercase;
+            text-align:left;
+            display:block;
+            width:100%;
+            font-weight:400;
+            letter-spacing:0.25em;
+        }
+    }
+    input, textarea{
+        width:100%;
+        background:#1a1a1a;
+        margin:5px auto 15px;
+        border:none;
+        padding:15px;
+        border-radius: 3px;
+        color:#fff;
+    }
+    .actions{
+        cursor:default;
+        list-style:none;
+        padding:0px;
+        margin:0;
+        li{
+            display: inline-block;
+            padding: 0 1em 0 0;
+            vertical-align: middle;
+            button, input{
+                //width:50%;
+                margin:10px auto;
+                text-transform:uppercase;
+                display: inline-block;
+                font-size: 16px;
+                line-height: 1.5;
+                padding: 0.5em 30px;
+                font-weight:700;
+                border: 2px solid #fff;
+                box-sizing: border-box;
+                color: #000;
+                background: #fff;
+                border-radius: 3px;
+                &:hover{
+                    background:transparent;
+                    color:#fff;
+                }
+            }
+            input{
+                background:transparent;
+                color:#fff;
+            }
+        }
+    }
+}

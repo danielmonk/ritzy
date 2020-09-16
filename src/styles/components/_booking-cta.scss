@@ -1,0 +1,60 @@
+.booking-cta{
+    background-color:#000;
+    background-image: url("../images/ritzy-banner-2-mobile.png");
+    background-position:center right;
+    padding:75px 0;
+    margin:25px 0;
+    background-size:Cover;
+    @media only screen and (min-width : $ipad){
+        flex-wrap:nowrap;
+        background-image: url("../images/ritzy-banner-2.png");
+    }
+    &__content{
+        display:flex;
+        align-items:center;
+        flex-wrap:wrap;
+        padding-right:30px;
+        @media only screen and (min-width : $ipad){
+            flex-wrap:nowrap;
+            padding-right:0;
+        }
+        h3{
+            margin-top:0;
+            @include responsive-font-size (
+                $min-font-size: 1.5em,
+                $max-font-size: 1.75em,
+                $min-screen-width: 640px,
+                $max-screen-width: 1200px,
+                $font-size-step: 0.1em /* optional, default: 0.1em */
+            );
+            &:after{
+                right:auto;
+            }
+        }
+        &--left{
+            @media only screen and (min-width : $ipad){
+                padding-right:30px;
+                width:75%;
+            }
+            p{
+                font-weight:300;
+            }
+        }
+        &--right{
+            text-align:center;
+            @media only screen and (min-width : $ipad){
+                padding-left:30px;
+                width:25%;
+            }
+            button{
+                @include responsive-font-size (
+                    $min-font-size: 1em,
+                    $max-font-size: 1.75em,
+                    $min-screen-width: 640px,
+                    $max-screen-width: 1200px,
+                    $font-size-step: 0.1em /* optional, default: 0.1em */
+                );
+            }
+        }
+    }
+}
