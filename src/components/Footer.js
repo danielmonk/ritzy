@@ -1,16 +1,27 @@
-import React from 'react'
+import PropTypes from "prop-types"
+import React from "react"
+import LoadingIcon from "../images/loading.svg"
 
-const Footer = (props) => (
-    <footer id="footer">
-        <div className="inner">
-            <ul className="icons">
-                <li><a target="_blank" href="https://instagram.com/luxfloorz" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
-            </ul>
-            <ul className="copyright">
-                <li>&copy; Lux Floors 2020</li><li><a href="https://danielmonk.io">danielmonk.io</a></li>
-            </ul>
+const Footer = ({ siteTitle }) => (
+  <div>
+    <footer className="footer">
+        <div className="footer--menu">
+          <ul>
+            <li>© Daniel Monk 2019. All rights reserved</li>
+            <li><a href="mailto:danieljmonk@gmail.com">Mail: danieljmonk@gmail.com</a></li>
+          </ul>
         </div>
     </footer>
+    <div className="cursor"></div>
+  </div>
 )
+
+Footer.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Footer.defaultProps = {
+  siteTitle: ``,
+}
 
 export default Footer

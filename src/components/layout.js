@@ -1,55 +1,41 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+/**
+ * Layout component that queries for data
+ * with Gatsby's StaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/static-query/
+ */
 
-import '../assets/scss/main.scss'
-import Header from './Header'
-import Menu from './Menu'
-import Contact from './Contact'
-import Footer from './Footer'
+import React from "react"
+import PropTypes from "prop-types"
+import { StaticQuery, graphql } from "gatsby"
 
-class Layout extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isMenuVisible: false,
-            loading: 'is-loading'
+import Header from "./header"
+import Footer from "./footer"
+import "./layout.scss"
+
+const Layout = ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
         }
-        this.handleToggleMenu = this.handleToggleMenu.bind(this)
-    }
+      }
+    `}
+    render={data => (
+      <>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main>{children}</main>
+        <Footer />
+      </>
+    )}
+  />
+)
 
-    componentDidMount () {
-        this.timeoutId = setTimeout(() => {
-            this.setState({loading: ''});
-        }, 100);
-    }
-
-    componentWillUnmount () {
-        if (this.timeoutId) {
-            clearTimeout(this.timeoutId);
-        }
-    }
-
-    handleToggleMenu() {
-        this.setState({
-            isMenuVisible: !this.state.isMenuVisible
-        })
-    }
-
-    render() {
-        const { children } = this.props
-
-        return (
-            <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
-                <div id="wrapper">
-                    <Header onToggleMenu={this.handleToggleMenu} />
-                    {children}
-                    <Contact />
-                    <Footer />
-                </div>
-                <Menu onToggleMenu={this.handleToggleMenu} />
-            </div>
-        )
-    }
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
