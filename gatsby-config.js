@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Lux Floors",
+    title: "Ritzy Studios",
     author: "Daniel Monk",
-    description: "Lux Floors"
+    description: "Ritzy Studios"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
