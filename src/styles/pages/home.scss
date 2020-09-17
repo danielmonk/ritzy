@@ -232,7 +232,19 @@ body.page--home{
                 margin-top:30px;
             }
         }
+        h4{
+            margin-bottom:1em;
+        }
+        h6{
+            margin-top:2.5em;
+            &:after{
+                content:none;
+            }
+        }
         p{
+            max-width:100%;
+            margin:4em auto 0;
+            font-weight:300;
             @include responsive-font-size (
                 $min-font-size: 1.25em,
                 $max-font-size: 1.75em,
@@ -240,6 +252,9 @@ body.page--home{
                 $max-screen-width: 1200px,
                 $font-size-step: 0.1em /* optional, default: 0.1em */
             );
+            @media only screen and (min-width : $ipad){
+                //max-width:80%;
+            }
         }
     }
     .terminal-sticky-container{

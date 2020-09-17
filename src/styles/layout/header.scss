@@ -101,6 +101,7 @@
             @media only screen and (min-width : $breakpoint){
                 display:flex;
                 margin-left:auto;
+                align-items: center;
             }
             li{
                 display:inline-block;
@@ -114,6 +115,26 @@
                 }
                 &:last-child{
                     //margin-right:0px;
+                }
+                &.book{
+                    background:#fff;
+                    border-radius: 3px;
+                    border: 2px solid #fff;
+                    padding:0.5em 30px;
+                    transition: all .15s ease-in-out;
+                    text-decoration: none;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    &:hover{
+                        background:transparent;
+                        a{
+                            color:#fff;
+                        }
+                    }
+                    a{
+                        color:#000;
+                    }
                 }
                 a{
                     color:#fff;

@@ -43,7 +43,16 @@ h5 {
         $font-size-step: 0.1em /* optional, default: 0.1em */
     );
 }
-h1, h2, h3, h4, h5{
+h6 {
+    @include responsive-font-size (
+        $min-font-size: 1em,
+        $max-font-size: 1.25em,
+        $min-screen-width: 640px,
+        $max-screen-width: 1200px,
+        $font-size-step: 0.1em /* optional, default: 0.1em */
+    );
+}
+h1, h2, h3, h4, h5, h6{
     font-family: $f-title, sans-serif;
     line-height:1.25;
     font-weight:300;
@@ -87,6 +96,15 @@ p{
         $max-screen-width: 1200px,
         $font-size-step: 0.1em /* optional, default: 0.1em */
     );
+    span{
+        @include responsive-font-size (
+            $min-font-size: 1.1em,
+            $max-font-size: 1.6em,
+            $min-screen-width: 640px,
+            $max-screen-width: 1200px,
+            $font-size-step: 0.1em /* optional, default: 0.1em */
+        ); 
+    }
 }
 a{
     transition:0.2 all;

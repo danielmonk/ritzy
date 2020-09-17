@@ -60,11 +60,26 @@
 .column{
     &.centered{
         text-align:center;
+        margin: 0 auto;
+        @media only screen and (min-width : $ipad){
+            max-width:80%;
+        }
     }
     &__image{
         border-radius:15px;
         &.round{
             border-radius:50%;
         }
+    }
+}
+.columns{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    @media only screen and (min-width : $ipad){
+        flex-wrap:nowrap;
+    }
+    .column{
+        flex:1;
     }
 }
