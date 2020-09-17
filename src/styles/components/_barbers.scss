@@ -10,19 +10,37 @@
     }
     .columns{
         margin-top:4em;
+        flex-wrap:wrap;
+        @media only screen and (min-width : $ipad){
+            flex-wrap:nowrap;
+        }
         .column{
             text-align:center;
+            width:100%;
+            flex:auto;
+            margin-bottom:2em;
+            padding: 0 30px;
+            @media only screen and (min-width : $ipad){
+                flex:1;
+                margin-bottom:0;
+                //padding:0;
+            }
             .photo{
                 position: relative;
                 &:after{
                     content:"";
                     background: #9a9a9a;
-                    right: 45px;
+                    right: -10px;
                     bottom: 5px;
-                    width: 70%;
+                    width: 100%;
                     height: 95%;
                     position: absolute;
                     z-index: 0;
+                    @media only screen and (min-width : $ipad){
+                        right: 45px;
+                        bottom: 5px;
+                        width: 70%;
+                    }
                 }
                img{
                    margin-bottom:0.25em;

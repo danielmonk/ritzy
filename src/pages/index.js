@@ -217,11 +217,14 @@ class Header extends React.Component {
           <section id="barbers" className="barbers">
             <div className="content--wrapper">
                 <div className="column centered">
+                  <Fade>
                   <h4>Our <strong>team</strong></h4>
                   <h6>All our barbers are of the highest merit and offer continuous high quality haircuts <strong>time after time.</strong></h6>
+                  </Fade>
                 </div>
               </div>
               <div className="content--wrapper">
+              <Fade>
                 <div className="columns">
                   <div className="column">
                     <div className="photo">
@@ -248,15 +251,46 @@ class Header extends React.Component {
                     <p className="title">Owner</p>
                   </div>
                 </div>
+              </Fade>
             </div>   
+          </section>
+
+          <section id="insta">
+            <div className="content--wrapper content--wrapper--big">
+              <div className="column centered">
+                <Fade>
+                  <h4>Follow us on Instagram</h4>
+                  <p>Keep up to date with all of our latest news.</p>
+                </Fade>
+              </div>
+            </div>
+            <div className="insta-grid">
+            <Fade>
+              <div className="insta-photo" style={styles.insta1}>
+                
+              </div>
+              <div className="insta-photo" style={styles.insta1}>
+                
+              </div>
+              <div className="insta-photo" style={styles.insta1}>
+                
+              </div>
+              <div className="insta-photo" style={styles.insta1}>
+                
+              </div>
+            </Fade>
+            </div>
           </section>
 
           <section id="opening" className="opening">
             <div className="content--wrapper">
               <div className="column centered">
+              <Fade>
                   <h4>Opening <strong>Times</strong></h4>
+                </Fade>
               </div>
               <div className="opening--times">
+                <Fade>
                 <div className="opening--time">
                   <div className="opening--day">Mon</div>
                   <div className="opening--start">9:00am</div>
@@ -299,34 +333,8 @@ class Header extends React.Component {
                   <span>-</span>
                   <div className="opening--end">5:30pm</div>
                 </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="insta">
-            <div className="content--wrapper content--wrapper--big">
-              <div className="column centered">
-                <Fade>
-                  <h4>Follow us on Instagram</h4>
-                  <p>Keep up to date with all of our latest news.</p>
                 </Fade>
               </div>
-            </div>
-            <div className="insta-grid">
-            <Fade>
-              <div className="insta-photo" style={styles.insta1}>
-                
-              </div>
-              <div className="insta-photo" style={styles.insta1}>
-                
-              </div>
-              <div className="insta-photo" style={styles.insta1}>
-                
-              </div>
-              <div className="insta-photo" style={styles.insta1}>
-                
-              </div>
-            </Fade>
             </div>
           </section>
 
@@ -334,7 +342,7 @@ class Header extends React.Component {
           <section id="contact" className="contact">
             <div className="content--wrapper">
                 <div className="contact__text">
-                  <Fade bottom fraction={0.4}>
+                  <Fade>
                     <p>Got a question for us?</p>
                     <h3><a href="mailto:danieljmonk@gmail.com">Enquire Now</a></h3>
                     <form action="https://getform.io/f/81fd928c-0842-4173-923d-585cd6383e38" method="POST">

@@ -14,18 +14,24 @@
         width:100%;
         display:flex;
         text-align:center;
+        flex-wrap:wrap;
+        @media only screen and (min-width : $breakpoint){
+           flex-wrap:nowrap;
+        }
     }
     &--time{
-        flex:1;
+        flex:auto;
         line-height: 1.25;
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 0.25em;
         margin: 1em 0 2em;
+        width:50%;
     }
     &--day{
         position: relative;
         margin-bottom:2em;
+        font-weight:400;
         @include responsive-font-size (
             $min-font-size: 1em,
             $max-font-size: 1.5em,
@@ -40,17 +46,17 @@
             position: absolute;
             left: 0;
             bottom: -10px;
-            width: 50%;
+            width: 20%;
             right: 0;
             margin: 0 auto;
         }
     }
     &--start, &--end{
         position:relative;
-        padding-left:30px;
+        padding-left:15px;
         &:before{
             content:"";
-            background-image:url("../images/iby-bw.png");
+            background-image:url("../images/clock.png");
             position: absolute;
             left: 18%;
             height: 15px;
