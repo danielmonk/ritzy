@@ -20,6 +20,7 @@ import ritzy3 from "../images/ritzy-collate-1.png"
 import insta from "../images/instagram.png"
 import facebook from "../images/facebook.png"
 import iby from "../images/iby-bw.png"
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
 let instaPhoto1 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/117795878_1250199461991549_3576501364359053768_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=109&_nc_ohc=_G5PxI7NTm4AX9rZB43&oh=513fe279817825e6e0d30e7eca901d25&oe=5F894506"
 let instaPhoto2 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/109811559_586866545310110_141645576686131022_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=102&_nc_ohc=dim_S0WSpTUAX_qKXXQ&_nc_tp=18&oh=adc191591306279b50bf00f7f5045a23&oe=5F8846C0"
 let instaPhoto3 = "https://scontent-lht6-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/107869648_609295649723384_3063073575809310173_n.jpg?_nc_ht=scontent-lht6-1.cdninstagram.com&_nc_cat=108&_nc_ohc=BGMhbOFEIKEAX_ou-YD&oh=a394c6b661c261a15b7b3b5e6925bb9e&oe=5F896D5E"
@@ -36,8 +37,19 @@ const styles = {
   }
 };
 
+
 const items = ['Ritzy', 'Hair Studio']  
 const config = { mass: 5, tension: 200, friction: 200 }
+
+const containerStyle = {
+  width: '100%',
+  height: '100%'
+};
+
+const center = {
+  lat: 52.570220,
+  lng: -0.245305,
+};
 
 function SpringDemo() {
     const [toggle, set] = useState(true)
@@ -259,7 +271,7 @@ class Header extends React.Component {
             <div className="content--wrapper content--wrapper--big">
               <div className="column centered">
                 <Fade>
-                  <h4>Follow us on Instagram</h4>
+                  <h4>Follow us on <strong><a href="https://www.instagram.com/ritzybarber" target="_blank">Instagram</a></strong><a className="insta" href="https://www.instagram.com/ritzybarber" target="_blank"></a></h4>
                   <p>Keep up to date with all of our latest news.</p>
                 </Fade>
               </div>
@@ -341,10 +353,11 @@ class Header extends React.Component {
     
           <section id="contact" className="contact">
             <div className="content--wrapper">
+              <div className="contact--left">
                 <div className="contact__text">
                   <Fade>
                     <p>Got a question for us?</p>
-                    <h3><a href="mailto:danieljmonk@gmail.com">Enquire Now</a></h3>
+                    <h5><a href="mailto:danieljmonk@gmail.com">Enquire Now</a></h5>
                     <form action="https://getform.io/f/81fd928c-0842-4173-923d-585cd6383e38" method="POST">
 
                     <div className="field first">
@@ -371,6 +384,29 @@ class Header extends React.Component {
                     </form>
                   </Fade>
                 </div>
+              </div>
+              <div className="contact--right">
+                <div className="contact--map">
+                  <LoadScript
+                    googleMapsApiKey="AIzaSyBlbKAE_VcREMiyIGSSu0nwKZi0PvJAFUI"
+                    >
+                      <GoogleMap
+                        mapContainerStyle={containerStyle}
+                        center={center}
+                        zoom={18}
+                      >
+                        { /* Child components, such as markers, info windows, etc. */ }
+                        <></>
+                      </GoogleMap>
+                    </LoadScript>
+                  </div>
+                  <div className="contact--address">
+                  <strong>Ritzy Studios</strong><br />
+                  62 Albert Pl,<br />
+                  Peterborough,<br />
+                  PE1 1DD
+                </div>
+              </div>
             </div>
           </section>
     
