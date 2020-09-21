@@ -1,7 +1,10 @@
 #insta{
     flex-wrap:wrap;
     h4{
-        padding-right:50px;
+        padding-right:15px;
+        @media only screen and (min-width : $large-breakpoint){
+            padding-right:50px;
+        }
         a{
             color:inherit;
             text-decoration:none;
@@ -14,10 +17,10 @@
             background-image:url("../images/instagram.png");
             background-size:10px;
             position: absolute;
-            top: 5px;
-            right: 0;
-            width: 35px;
-            height: 35px;
+            top: 2.5px;
+            right: 5px;
+            width: 15px;
+            height: 15px;
             background-size: cover;
             -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
@@ -26,9 +29,15 @@
                 -webkit-filter: brightness(0) invert(0.5);
                 filter: brightness(0) invert(0.5);
             }
+            @media only screen and (min-width : $large-breakpoint){
+                width: 35px;
+                height: 35px;
+                top: 5px;
+                right: 0;
+            }
         }
     }
-    .insta-grid{
+    .insta-grid, .slick-slider, .slick-list, .slick-track{
         position: relative;
         display:flex;
         height:100%;
@@ -38,13 +47,14 @@
             flex-wrap:nowrap;
         }
     }
-    .insta-photo{
+    .insta-photo, .slick-slide{
         width: 100%;
         height: 100%;
         min-height: 50vh;
         margin: 15px;
         background-position:center;
         display:none;
+        position: relative;
         &:first-child{
             display:block;
         }
@@ -69,6 +79,27 @@
         @media only screen and (min-width : $large-breakpoint){
             min-height:500px;
             display:block;
+        }
+        a{
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+            position: absolute;
+            z-index:10;
+        }
+        .cover{
+            background-size:cover;
+            height:100%;
+            width:100%;
+            min-height:100vw;
+            min-width:20vw;
+            @media only screen and (min-width : $ipad){
+                min-height:20vw;
+            }
+            @media only screen and (min-width : $large-breakpoint){
+                min-height:20vw;
+            }
         }
     }
 }
