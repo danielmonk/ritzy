@@ -10,7 +10,7 @@ export default class SimpleSlider extends Component {
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 5,
       slidesToScroll: 1,
       variableWidth: true,
       arrows: false,
@@ -18,6 +18,15 @@ export default class SimpleSlider extends Component {
       //centerPadding: 100,
       autoplay: true,
       touchThreshold:100,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          }
+        }
+      ]      
     };
     return (
         <section id="insta">

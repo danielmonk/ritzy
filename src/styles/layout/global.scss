@@ -87,6 +87,7 @@ section{
   align-items:center;
   position: relative;
   flex-wrap:wrap;
+  overflow:hidden;
   @media(min-width: $breakpoint) {
     padding:125px 0;
   }
