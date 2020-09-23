@@ -27,6 +27,9 @@
         letter-spacing: 0.25em;
         margin: 1em 0 2em;
         width:50%;
+        @media only screen and (min-width : $ipad){
+            width:20%;
+         }
     }
     &--day{
         position: relative;

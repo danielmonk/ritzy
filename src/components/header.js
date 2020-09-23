@@ -38,11 +38,16 @@ export default class Header extends React.Component {
 
     // menu 
     const burger = document.querySelectorAll(".burger")
-    const body = document.querySelectorAll("body")
+    const close = document.querySelectorAll(".close")
+    const body = document.querySelectorAll("html")
     for (let i = 0; i < burger.length; i++) {
       burger[i].addEventListener("click", function() {
         body[0].classList.toggle("menu-open");
-        console.log("test")
+      });
+    }
+    for (let i = 0; i < close.length; i++) {
+      close[i].addEventListener("click", function() {
+        body[0].classList.toggle("menu-open");
       });
     }
     
@@ -55,6 +60,7 @@ export default class Header extends React.Component {
       <div className="header--logo">
         <div className="logo">
           <Link to="/"></Link><img src={LogoScroll}></img>
+          <h1>Ritzy Studios</h1>
         </div>
       </div>
       <div className="header--nav">
@@ -67,18 +73,20 @@ export default class Header extends React.Component {
           </svg>
           <a className="close"></a>
         <ul>
-        <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
+        <li><a href="/prices">Prices</a></li>
         <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/contact">Contact</a></li>
         <li className="book"><a href="https://www.fresha.com/providers/ritzy-studios-kk1eohva?pId=392894">Book Now</a></li>
         </ul>
       </div>
     </header>
     <div className="mobile-menu">
         <ul>
-          <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
+          <li><a href="/prices">Price List</a></li>
           <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/contact">Contact</a></li>
           <li><a href="https://www.fresha.com/providers/ritzy-studios-kk1eohva?pId=392894">Book</a></li>
         </ul>
     </div>

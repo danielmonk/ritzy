@@ -8,17 +8,19 @@
         max-width:90%;
     }
     .image, .text{
-        @media only screen and (min-width : 768px){
+        @media only screen and (min-width : $breakpoint){
             width: 50%;
         }
     }
     .image{
-        @media only screen and (min-width : 768px){
+        margin:0 auto;
+        @media only screen and (min-width : $breakpoint){
             margin-right:50px;
         }
     }
     .text{
-        @media only screen and (min-width : 768px){
+        margin:0 auto;
+        @media only screen and (min-width : $breakpoint){
             margin-left:50px;
             //padding-right:5%;
         }

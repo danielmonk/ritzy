@@ -1,0 +1,16 @@
+.gallery-block{
+    display:flex;
+    flex-wrap:wrap;
+    padding-top:75px;
+    @media only screen and (min-width : $breakpoint){
+       //flex-wrap:nowrap;
+    }
+    &__single{
+        //flex:1;
+        width:calc(100%);
+        margin:0 15px;
+        @media only screen and (min-width : $breakpoint){
+            width:calc(33.3% - 30px);
+         }
+    }
+}

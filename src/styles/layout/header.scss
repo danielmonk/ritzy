@@ -14,17 +14,20 @@
     z-index: 9999;
     display: flex;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     transition: background 0.2s ease-in-out;
     border-bottom:1px solid transparent;
     //top:0px;
     align-items:center;
     flex-wrap:wrap;
-    background:transparent;
-    width:100%;
+    background:#000;
+    top:0;
     @media only screen and (min-width : 768px){
         flex-wrap:unset;
         height: 75px;
+    }
+    &.home{
+        background:transparent;
     }
     &.scrolled{
         background:#000;
@@ -143,6 +146,18 @@
             }
         }
     }
+    &--page{
+        h2{
+            margin-top:0;
+            padding-top:6em;
+            @media only screen and (min-width : $breakpoint){
+                padding-top:4em;
+            }
+            &:after{
+                right:auto;
+            }
+        }
+    }
 }
 .header-fixed{
     /*
@@ -206,6 +221,9 @@
             max-height: 60px;
             //margin:0;
         }
+    }
+    h1{
+        display: none;
     }
 }
 .headroom {

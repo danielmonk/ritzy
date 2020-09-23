@@ -97,14 +97,17 @@ class Header extends React.Component {
   componentDidMount () {
 
     var scrollpos = window.scrollY;
-    var header = document.querySelector(".page");
+    var header = document.querySelector(".header");
+    var page = document.querySelector(".page");
+
+    header.classList.add("home");
 
     function add_class_on_scroll() {
-        header.classList.add("video-inactive");
+      page.classList.add("video-inactive");
     }
 
     function remove_class_on_scroll() {
-        header.classList.remove("video-inactive");
+      page.classList.remove("video-inactive");
     }
 
     window.addEventListener('scroll', function(){ 
@@ -366,7 +369,7 @@ class Header extends React.Component {
           </section>
 
     
-          <section id="contact" className="contact">
+          <section id="contact home" className="contact">
           <div className="content--wrapper">
             <div className="column centered">
                 <div className="contact__text">

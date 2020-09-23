@@ -1,8 +1,10 @@
 
 body{
     overflow-x:hidden;
+    position: relative;
 }
 .menu-open{
+    overflow:hidden;
     .mobile-menu{
         //display:block;
         opacity:1;
@@ -10,6 +12,12 @@ body{
         pointer-events:all;
         transform: translateX(0%);
         width:100%;
+    }
+    .burger{
+        display:none;
+    }
+    .close{
+        display:block;
     }
 }
 .mobile-menu{
@@ -21,10 +29,10 @@ body{
   //display:none;
   opacity:0;
   visibility:hidden;
-  transition:all 0.2 ease-in-out;
+  transition: transform 0.2s ease-in-out;
   pointer-events:none;
   transform: translateX(100%);
-  position: absolute;
+  position: fixed;
   z-index: 99;
   width: 0;
   ul{
