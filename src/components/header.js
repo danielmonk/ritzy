@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 //import Logo from "../components/images/logoImage"
 import Logo from "../images/ritzy-small.png"
-import LogoScroll from "../images/ritzy-r-small.png"
+import LogoScroll from "../images/ritzy-r.png"
 import FacebookIcon from "../images/facebook-inline.svg"
 import LinkedInIcon from "../images/linkedin-inline.svg"
 import instagramIcon from "../images/instagram-icon.svg"
@@ -74,7 +74,6 @@ export default class Header extends React.Component {
           <a className="close"></a>
         <ul>
         <li><a href="/about">About</a></li>
-        <li><a href="/prices">Prices</a></li>
         <li><a href="/gallery">Gallery</a></li>
         <li><a href="/contact">Contact</a></li>
         <li className="book"><a href="https://www.fresha.com/providers/ritzy-studios-kk1eohva?pId=392894">Book Now</a></li>
@@ -84,7 +83,6 @@ export default class Header extends React.Component {
     <div className="mobile-menu">
         <ul>
           <li><a href="/about">About</a></li>
-          <li><a href="/prices">Price List</a></li>
           <li><a href="/gallery">Gallery</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="https://www.fresha.com/providers/ritzy-studios-kk1eohva?pId=392894">Book</a></li>

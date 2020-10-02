@@ -11,16 +11,16 @@ import RACLogo from "../images/rac-logo.png"
 import KrogerLogo from "../images/kroger-logo.png"
 import EightLogo from "../images/888sport-logo.png"
 import youtubeBGImg from "../images/youtube.jpg"
-import youtubeVideo from "../videos/NY-Collated-minimised.mp4"
+import youtubeVideo from "../videos/RITZY.mp4"
 import macbookBG from "../images/macbook-render.png"
-import ritzylogo from "../images/ritzy-large.png"
+import ritzylogo from "../images/ritzy-logo.png"
 import ritzy1 from "../images/ritzy-studios-1.png"
 import ritzy2 from "../images/ritzy-studios-2.png"
 import ritzy3 from "../images/ritzy-collate-1.png"
 import insta from "../images/instagram.png"
 import facebook from "../images/facebook.png"
-import iby from "../images/iby-bw.png"
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import iby from "../images/ritzy-color.jpg"
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import InstaSlider from '../components/InstaSlider';
 let instaPhoto1 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/117795878_1250199461991549_3576501364359053768_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=109&_nc_ohc=_G5PxI7NTm4AX9rZB43&oh=513fe279817825e6e0d30e7eca901d25&oe=5F894506"
 let insta1Link = "https://www.instagram.com/p/CD9PcGcD_Nd/"
@@ -264,7 +264,7 @@ class Header extends React.Component {
                       <img src={iby}></img>
                       <a className="insta" href="https://www.instagram.com/ritzybarber" target="_blank"></a>
                     </div>
-                    <p className="name">Iby</p>
+                    <p className="name">Ritzy</p>
                     <p className="title">Owner</p>
                   </div>
                   <div className="column">
@@ -272,7 +272,7 @@ class Header extends React.Component {
                       <img src={iby}></img>
                       <a className="insta" href="https://www.instagram.com/ritzybarber" target="_blank"></a>
                     </div>
-                    <p className="name">Iby</p>
+                    <p className="name">Barber 2</p>
                     <p className="title">Owner</p>
                   </div>
                   <div className="column">
@@ -280,7 +280,7 @@ class Header extends React.Component {
                       <img src={iby}></img>
                       <a className="insta" href="https://www.instagram.com/ritzybarber" target="_blank"></a>
                     </div>
-                    <p className="name">Iby</p>
+                    <p className="name">Barber 3</p>
                     <p className="title">Owner</p>
                   </div>
                 </div>
@@ -323,45 +323,43 @@ class Header extends React.Component {
                 <Fade>
                 <div className="opening--time">
                   <div className="opening--day">Mon</div>
-                  <div className="opening--start">9:00am</div>
+                  <div className="opening--start">11:00am</div>
                   <span>-</span>
-                  <div className="opening--end">5:30pm</div>
+                  <div className="opening--end">7:00pm</div>
                 </div>
                 <div className="opening--time">
                   <div className="opening--day">Tue</div>
-                  <div className="opening--start">9:00am</div>
+                  <div className="opening--start">11:00am</div>
                   <span>-</span>
-                  <div className="opening--end">5:30pm</div>
+                  <div className="opening--end">7:00pm</div>
                 </div>
                 <div className="opening--time">
                   <div className="opening--day">Wed</div>
-                  <div className="opening--start">9:00am</div>
+                  <div className="opening--start">11:00am</div>
                   <span>-</span>
-                  <div className="opening--end">5:30pm</div>
+                  <div className="opening--end">7:00pm</div>
                 </div>
                 <div className="opening--time">
                   <div className="opening--day">Thu</div>
                   <div className="opening--start">9:00am</div>
                   <span>-</span>
-                  <div className="opening--end">5:30pm</div>
+                  <div className="opening--end">8:00pm</div>
                 </div>
                 <div className="opening--time">
                   <div className="opening--day">Fri</div>
                   <div className="opening--start">9:00am</div>
                   <span>-</span>
-                  <div className="opening--end">5:30pm</div>
+                  <div className="opening--end">8:00pm</div>
                 </div>
                 <div className="opening--time">
                   <div className="opening--day">Sat</div>
-                  <div className="opening--start">9:00am</div>
+                  <div className="opening--start">8:00am</div>
                   <span>-</span>
-                  <div className="opening--end">5:30pm</div>
+                  <div className="opening--end">16:00pm</div>
                 </div>
                 <div className="opening--time">
                   <div className="opening--day">Sun</div>
-                  <div className="opening--start">9:00am</div>
-                  <span>-</span>
-                  <div className="opening--end">5:30pm</div>
+                  <span className="closed">Closed</span>
                 </div>
                 </Fade>
               </div>
@@ -422,7 +420,7 @@ class Header extends React.Component {
                         center={center}
                         zoom={18}
                       >
-                        { /* Child components, such as markers, info windows, etc. */ }
+                        <Marker position={{ lat: 52.570220, lng: -0.245305 }} />
                         <></>
                       </GoogleMap>
                     </LoadScript>

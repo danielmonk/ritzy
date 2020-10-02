@@ -10,7 +10,7 @@
         margin-right:auto;
         max-width:75%;
         @media only screen and (min-width : $large-breakpoint){
-            padding-right:50px;
+            //padding-right:50px;
             max-width:100%;
         }
         a{
@@ -24,7 +24,8 @@
         .insta{
             background-image:url("../images/instagram.png");
             background-size:10px;
-            position: absolute;
+            //position: absolute;
+            display: inline-block;
             margin-left:5px;
             width: 15px;
             height: 15px;

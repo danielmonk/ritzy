@@ -30,6 +30,10 @@
         @media only screen and (min-width : $ipad){
             width:20%;
          }
+         .closed{
+             margin-top:15px;
+             display:inline-block;
+         }
     }
     &--day{
         position: relative;
@@ -61,7 +65,7 @@
             content:"";
             background-image:url("../images/clock.png");
             position: absolute;
-            left: 18%;
+            left: 15px;
             height: 15px;
             width: 15px;
             top: 1px;

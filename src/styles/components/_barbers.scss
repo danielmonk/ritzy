@@ -31,15 +31,15 @@
                     content:"";
                     background: #9a9a9a;
                     right: -10px;
-                    bottom: 5px;
+                    bottom: 0px;
                     width: 100%;
                     height: 95%;
                     position: absolute;
                     z-index: 0;
                     @media only screen and (min-width : $ipad){
-                        right: 15px;
+                        right: -10px;
                         bottom: 5px;
-                        width: 87%;
+                        width: 100%;
                     }
                 }
                img{
@@ -93,8 +93,8 @@
                 position:relative;
 
                 @include responsive-font-size (
-                    $min-font-size: 0.75em,
-                    $max-font-size: 1em,
+                    $min-font-size: 0.9em,
+                    $max-font-size: 1.1em,
                     $min-screen-width: 640px,
                     $max-screen-width: 1200px,
                     $font-size-step: 0.1em /* optional, default: 0.1em */
