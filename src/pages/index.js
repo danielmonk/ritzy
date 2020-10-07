@@ -17,9 +17,12 @@ import ritzylogo from "../images/ritzy-logo.png"
 import ritzy1 from "../images/ritzy-studios-1.png"
 import ritzy2 from "../images/ritzy-studios-2.png"
 import ritzy3 from "../images/ritzy-collate-1.png"
+import ritzy4 from "../images/ritzy-4.jpg"
 import insta from "../images/instagram.png"
 import facebook from "../images/facebook.png"
 import iby from "../images/ritzy-color.jpg"
+import asap_blends from "../images/asapblends.jpg"
+import darkfader from "../images/darkfader.jpg"
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import InstaSlider from '../components/InstaSlider';
 let instaPhoto1 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/117795878_1250199461991549_3576501364359053768_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=109&_nc_ohc=_G5PxI7NTm4AX9rZB43&oh=513fe279817825e6e0d30e7eca901d25&oe=5F894506"
@@ -163,8 +166,8 @@ class Header extends React.Component {
                   <div className="column centered">
                     <Fade> 
                     <h4>Welcome to <strong>Ritzy</strong> Hair Studios</h4>
-                    <h6>A brand new barber experience, in the heart of Peterborough.</h6>
-                    <p>We've been working in the barbering industry for over <strong>5 years</strong> & have developed the highest standard of barbering services. All of our staff are trained to the highest levels possible offering that perfect cut every time. </p>
+                    <h6>A brand new experience, in the heart of Peterborough.</h6>
+                    <p>We've been working in the hair industry for over <strong>5 years</strong> & have developed the highest level of services. </p>
                     </Fade>
                   </div>
               </div>
@@ -175,12 +178,12 @@ class Header extends React.Component {
             <div className="content--wrapper content--wrapper--big">
             <Fade> 
               <div className="image">
-                <img src={ritzy3} />
+                <img src={ritzy4} />
               </div>
             </Fade>
             <Fade> 
               <div className="text">
-                <p>"Our cutting philosophy stems from the consultation. There is no such thing as <strong>can’t do</strong>, <strong>won’t do</strong> or <strong>don’t do</strong> within our cutting philosophy. They say the customer is always right...and we say the stylist is right behind them and on hand to deliver their expert advice both <strong>professionally</strong> and <strong>technically</strong>"</p>
+                <p>"Our cutting philosophy stems from the consultation. There is no such thing as <strong>can’t do</strong>, <strong>won’t do</strong> or <strong>don’t do</strong> The stylist is right behind them on hand to deliver their expert advice both <strong>professionally</strong> and <strong>technically</strong>"</p>
               </div>
               </Fade>
             </div>
@@ -230,7 +233,7 @@ class Header extends React.Component {
                 <div className="column">
                   <Fade right> 
                   <div>
-                  <h3 className="left">Text.</h3>
+                  <h3 className="left">Inspire.</h3>
                   <p>More text, more text, more text, more text, more text, more text, more text, more text.</p>
                   </div>
                   </Fade>
@@ -238,7 +241,7 @@ class Header extends React.Component {
                 <div className="column">
                   <Fade right> 
                   <div>
-                  <h3 className="left">Text.</h3>
+                  <h3 className="left">Deliver.</h3>
                   <p>More text, more text, more text, more text, more text, more text, more text, more text.</p>
                   </div>
                   </Fade>
@@ -262,26 +265,26 @@ class Header extends React.Component {
                   <div className="column">
                     <div className="photo">
                       <img src={iby}></img>
-                      <a className="insta" href="https://www.instagram.com/ritzybarber" target="_blank"></a>
+                      <a className="insta white" href="https://www.instagram.com/ritzybarber" target="_blank"></a>
                     </div>
                     <p className="name">Ritzy</p>
                     <p className="title">Owner</p>
                   </div>
                   <div className="column">
                     <div className="photo">
-                      <img src={iby}></img>
-                      <a className="insta" href="https://www.instagram.com/ritzybarber" target="_blank"></a>
+                      <img src={asap_blends}></img>
+                      <a className="insta white" href="https://www.instagram.com/asap_blends" target="_blank"></a>
                     </div>
-                    <p className="name">Barber 2</p>
-                    <p className="title">Owner</p>
+                    <p className="name">asap_blends</p>
+                    <p className="title">Barber</p>
                   </div>
                   <div className="column">
                     <div className="photo">
-                      <img src={iby}></img>
-                      <a className="insta" href="https://www.instagram.com/ritzybarber" target="_blank"></a>
+                      <img src={darkfader}></img>
+                      <a className="insta" href="https://www.instagram.com/darkfaderr__" target="_blank"></a>
                     </div>
-                    <p className="name">Barber 3</p>
-                    <p className="title">Owner</p>
+                    <p className="name">darkfader</p>
+                    <p className="title">Barber</p>
                   </div>
                 </div>
               </Fade>
@@ -323,9 +326,12 @@ class Header extends React.Component {
                 <Fade>
                 <div className="opening--time">
                   <div className="opening--day">Mon</div>
+                  { /*
                   <div className="opening--start">11:00am</div>
                   <span>-</span>
                   <div className="opening--end">7:00pm</div>
+                  */ }
+                  <div className="opening--start monday">Starting from 2nd November</div>
                 </div>
                 <div className="opening--time">
                   <div className="opening--day">Tue</div>
@@ -362,6 +368,9 @@ class Header extends React.Component {
                   <span className="closed">Closed</span>
                 </div>
                 </Fade>
+              </div>
+              <div className="opening--message">
+                <p>Out of hours cuts can be booked for after hours fee</p>
               </div>
             </div>
           </section>

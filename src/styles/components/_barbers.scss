@@ -52,13 +52,16 @@
                 background-size:10px;
                 position: absolute;
                 bottom: 7%;
-                right: 15%;
+                right: 5%;
+                z-index:10;
                 width: 25px;
                 height: 25px;
                 background-size: cover;
-                -webkit-filter: brightness(0) invert(1);
-                filter: brightness(0) invert(1);
                 transition:0.2s ease-in-out;
+                &.white{
+                    -webkit-filter: brightness(0) invert(1);
+                    filter: brightness(0) invert(1);
+                }
                 &:hover{
                     -webkit-filter: none;
                     filter: none;
