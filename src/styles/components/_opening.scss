@@ -33,6 +33,9 @@
          .closed{
              margin-top:15px;
              display:inline-block;
+             &.starting{
+                 margin-top:0;
+             }
          }
     }
     &--day{

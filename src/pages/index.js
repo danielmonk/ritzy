@@ -331,7 +331,7 @@ class Header extends React.Component {
                   <span>-</span>
                   <div className="opening--end">7:00pm</div>
                   */ }
-                  <div className="opening--start monday">Starting from 2nd November</div>
+                  <span className="closed starting">Starting from 2nd November</span>
                 </div>
                 <div className="opening--time">
                   <div className="opening--day">Tue</div>
