@@ -7,8 +7,13 @@ const Footer = ({ siteTitle }) => (
     <footer className="footer">
         <div className="footer--menu">
           <ul>
-            <li>© Daniel Monk 2019. All rights reserved</li>
-            <li><a href="mailto:danieljmonk@gmail.com">Mail: danieljmonk@gmail.com</a></li>
+            <li>© Ritzy Studios 2020. All rights reserved</li>
+            <li>Made by <a target="_blank" href="https://danielmonk.io">danielmonk.io</a></li>
+          </ul>
+          <ul className="terms">
+            <li><a href="/terms">Terms</a></li>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/cookies">Cookies</a></li>
           </ul>
         </div>
     </footer>

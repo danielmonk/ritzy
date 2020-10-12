@@ -4,34 +4,26 @@ $duration: 10s;
     padding:25px 0;
     overflow-x:hidden;
     @media only screen and (min-width : $ipad){
-        padding:50px 0;
+        //padding:50px 0;
     }
     &--menu{
         width: 100%;
         overflow: hidden;
         background-color: #161618; 
-        padding-left: 100%;
+        //padding-left: 100%;
         box-sizing: content-box;
-        .ticker{ 
-            display: inline-block;
-            height: 4rem;
-            line-height: 4rem;  
-            white-space: nowrap;
-            padding:0 100% 0 0;
-            margin:0px;
-            box-sizing: content-box;
-            list-style: none;
-            -webkit-animation-iteration-count: infinite; 
-            animation-iteration-count: infinite;
-            -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-            -webkit-animation-name: ticker;
-            animation-name: ticker;
-            -webkit-animation-duration: $duration;
-            animation-duration: $duration;
-            &:hover{
-                animation-play-state: paused;
-            }
+        ul{
+            margin:0;
+            display: flex;
+            padding: 0;
+            justify-content: space-between;
+            @include responsive-font-size (
+                $min-font-size: 0.8em,
+                $max-font-size: 0.8em,
+                $min-screen-width: 640px,
+                $max-screen-width: 1200px,
+                $font-size-step: 0.1em /* optional, default: 0.1em */
+                );
             li{
                 display:inline-block;
                 margin:0 15px;
@@ -49,7 +41,13 @@ $duration: 10s;
                 a{
                     color:#fff;
                     text-decoration: none;
+                    &:hover{
+                        color:$dm-pink;
+                    }
                 }
+            }
+            &.terms{
+                justify-content: normal;
             }
         }
     }
