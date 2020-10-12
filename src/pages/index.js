@@ -20,7 +20,7 @@ import ritzy3 from "../images/ritzy-collate-1.png"
 import ritzy4 from "../images/ritzy-4.jpg"
 import insta from "../images/instagram.png"
 import facebook from "../images/facebook.png"
-import iby from "../images/ritzy-new.JPG"
+import iby from "../images/ritzy-new.png"
 import asap_blends from "../images/asapblends.jpg"
 import darkfader from "../images/darkfader.jpg"
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
