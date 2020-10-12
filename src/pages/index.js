@@ -129,7 +129,7 @@ class Header extends React.Component {
   render () {
     return (
       <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title="Home" keywords={[`Ritzy Studios`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
         <div className="page page--home">
           <section id="top" className="top">
             <div className="homepage-hero-module">
@@ -276,7 +276,7 @@ class Header extends React.Component {
                       <a className="insta white" href="https://www.instagram.com/asap_blends" target="_blank"></a>
                     </div>
                     <p className="name">asap_blends</p>
-                    <p className="title">Barber</p>
+                    <p className="title">Stylist</p>
                   </div>
                   <div className="column">
                     <div className="photo">
@@ -284,7 +284,7 @@ class Header extends React.Component {
                       <a className="insta" href="https://www.instagram.com/darkfaderr__" target="_blank"></a>
                     </div>
                     <p className="name">darkfader</p>
-                    <p className="title">Barber</p>
+                    <p className="title">Stylist</p>
                   </div>
                 </div>
               </Fade>

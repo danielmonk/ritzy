@@ -35,7 +35,7 @@ class Gallery extends React.Component {
     return (
     <SimpleReactLightbox> 
       <Layout>
-        <SEO title="Gallery" keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title="Gallery" keywords={[`Ritzy Studios`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
         <div className="page page--gallery">
             <div className="content--wrapper">
             <div id="gallery-page" className="gallery-page">

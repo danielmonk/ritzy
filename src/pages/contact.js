@@ -26,7 +26,7 @@ class Contact extends React.Component {
     return (
     <SimpleReactLightbox> 
       <Layout>
-        <SEO title="Contact" keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title="Contact" keywords={[`Ritzy Studios`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
         <div className="page page--gallery">
             <div className="content--wrapper">
                 <div id="gallery-page" className="gallery-page">
