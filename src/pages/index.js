@@ -183,6 +183,8 @@ class Header extends React.Component {
             </div>
           </section>
 
+
+          { /*
           <section id="booking-cta" className="booking-cta">
             <div className="content--wrapper">
               <div className="booking-cta__content">
@@ -200,6 +202,24 @@ class Header extends React.Component {
                   <a className="button button--white" href="https://www.fresha.com/providers/ritzy-studios-kk1eohva?pId=392894">Book Now</a>
                 </div>
                 </Fade>
+                </div>
+              </div>
+            </div>
+          </section>
+          */ }
+
+        <section id="booking-cta" className="booking-cta">
+            <div className="content--wrapper">
+              <div className="booking-cta__content">
+                <div className="booking-cta__content--left">
+                  <Fade>
+                  <div>
+                  <h3>Our booking system is coming soon</h3>
+                  <p>Please book all appointments as usual for the time being.</p>
+                  </div>
+                </Fade>
+                </div>
+                <div className="booking-cta__content--right">
                 </div>
               </div>
             </div>

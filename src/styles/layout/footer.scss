@@ -52,3 +52,115 @@ $duration: 10s;
         }
     }
 }
+body{
+    &.modal-open{
+        position: relative;
+        overflow:hidden;
+        &:after{
+            content:"";
+            position:absolute;
+            background:rgba(0,0,0,0.8);
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            z-index:10;
+        }
+    }
+}
+.popup-content{
+    max-width: 800px;
+    padding:0 15px
+}
+.modal-wrapper{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    left:0;
+    top:0;
+    position: fixed;
+    z-index:99;
+}
+.modal-toggle{
+    display:none;
+}
+.modal {
+    font-size: 12px;
+    background:#000;
+    z-index:10;
+    padding:15px 30px;
+    text-align:center;
+    border-radius:12px;
+    //max-width:75%;
+    //margin:0 12.5%;
+    left:0;
+    right:0;
+    margin:0 5vw;
+    text-align:left;
+    border: 3px solid #101010;
+    z-index:99;
+    position:relative;
+
+    @media only screen and (min-width : $breakpoint){
+        padding: 2.5% 5%;
+        max-width: 50%;
+        margin:0 auto;
+    }
+
+    h3{
+        margin-top:0.5em;
+        margin-bottom:1em;
+        @include responsive-font-size (
+            $min-font-size: 2em,
+            $max-font-size: 2.5em,
+            $min-screen-width: 640px,
+            $max-screen-width: 1200px,
+            $font-size-step: 0.1em /* optional, default: 0.1em */
+        );
+        &:after{
+            right:auto;
+            bottom:-10px;
+        }
+    }
+
+    ul, p{
+        @include responsive-font-size (
+            $min-font-size: 1em,
+            $max-font-size: 1.25em,
+            $min-screen-width: 640px,
+            $max-screen-width: 1200px,
+            $font-size-step: 0.1em /* optional, default: 0.1em */
+        );
+    }
+  }
+  .modal > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal > .content {
+    width: 100%;
+    //padding: 10px 5px;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .modal-close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
