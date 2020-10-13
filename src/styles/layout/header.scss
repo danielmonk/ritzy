@@ -128,14 +128,25 @@
                     letter-spacing: 0.15em;
                     text-transform: uppercase;
                     font-weight: 700;
+                    position: relative;
+                    color:#000;
                     &:hover{
                         background:transparent;
+                        color:#fff;
                         a{
                             color:#fff;
                         }
                     }
                     a{
                         color:#000;
+                        position:absolute;
+                        left:0;
+                        top:0;
+                        width:100%;
+                        height:100%;
+                        span{
+                            display:none;
+                        }
                     }
                 }
                 a{
