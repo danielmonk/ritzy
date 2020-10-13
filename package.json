@@ -28,7 +28,8 @@
     "react-typist": "^2.0.5",
     "reactjs-popup": "^2.0.4",
     "simple-react-lightbox": "^3.3.4",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "universal-cookie": "^4.0.4"
   },
   "keywords": [
     "gatsby"

@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import LoadingIcon from "../images/loading.svg"
 import Popup from 'reactjs-popup';
+import Cookies from 'universal-cookie';
 
 
 export default class Footer extends React.Component {
@@ -11,17 +12,22 @@ export default class Footer extends React.Component {
       let modalClose = document.querySelectorAll(".modal-close");
       let modal = document.querySelectorAll(".modal");
       let modalWrapper = document.querySelectorAll(".modal-wrapper");
+      const cookies = new Cookies();
 
       body.classList.add("modal-open");
 
+      if(cookies.get('hideModal') === 'true'){
+        body.classList.remove("modal-open");
+        modalWrapper[0].remove();
+       } else {
         for (let i = 0; i < modalClose.length; i++) {
-          console.log("test 1");
           modalClose[i].addEventListener("click", function() {
-            console.log("test 2");
             body.classList.remove("modal-open");
             modalWrapper[0].remove();
+            cookies.set('hideModal', 'true', { path: '/' });
           });
         }
+       }
     }
   render() {
     return (
