@@ -21,6 +21,15 @@ export default function HTML(props) {
         <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
         <link rel="manifest" href={manifest} />
         <link rel="shortcut icon" href={faviconICO} />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76115201-5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-76115201-5');
+        </script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
