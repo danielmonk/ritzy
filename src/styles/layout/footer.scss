@@ -104,12 +104,13 @@ body{
 
     @media only screen and (min-width : $breakpoint){
         padding: 2.5% 5%;
-        max-width: 50%;
+        width: 50%;
         margin:0 auto;
+        max-width: 700px;
     }
 
     h3{
-        margin-top:0.5em;
+        margin-top:0em;
         margin-bottom:1em;
         @include responsive-font-size (
             $min-font-size: 2em,
