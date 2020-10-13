@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import ritzyStudio from "../images/ritzystudio.jpg"
 import ritzyStudio2 from "../images/ritzystudio2.jpg"
+import ritzyStudio3 from "../images/ritzy-placeholder.png"
 
 const containerStyle = {
     width: '100%',
@@ -40,13 +41,8 @@ class Header extends React.Component {
                             <div className="intro--text">
                                 <p>Ritzy studios is a creative hair / photography studio in the heart of Peterborough. Our studio Goal is to create & express through our work to show the public what we have to offer.</p>
                             </div>
-                            <div className="intro--photos">
-                                <div className="intro--photos small">
-                                    <img src={ritzyStudio}></img> 
-                                </div>
-                                <div className="intro--photos large">
-                                    <img src={ritzyStudio2}></img> 
-                                </div>
+                            <div className="intro--photo">
+                                <img src={ritzyStudio3}></img> 
                             </div>
                         </section>
                         <section className="rules">
