@@ -4,11 +4,6 @@ import React from "react"
 //import Logo from "../components/images/logoImage"
 import Logo from "../images/ritzy-small.png"
 import LogoScroll from "../images/ritzy-r-no-text.png"
-import FacebookIcon from "../images/facebook-inline.svg"
-import LinkedInIcon from "../images/linkedin-inline.svg"
-import instagramIcon from "../images/instagram-icon.svg"
-import githubIcon from "../images/github-logo.svg"
-import MailIcon from "../images/envelope-inline.svg"
 import '../js/helpers';
 
 export default class Header extends React.Component {

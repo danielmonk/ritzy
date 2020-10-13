@@ -4,12 +4,6 @@ import SEO from "../components/seo"
 import Typist from 'react-typist';
 import {useTrail, animated} from 'react-spring'
 import Fade from 'react-reveal/Fade';
-import LGLogo from "../images/lg-logo.png"
-import CalpolLogo from "../images/calpol-logo-1.png"
-import LVLogo from "../images/lv-logo.png"
-import RACLogo from "../images/rac-logo.png"
-import KrogerLogo from "../images/kroger-logo.png"
-import EightLogo from "../images/888sport-logo.png"
 import youtubeBGImg from "../images/ritzy-placeholder.png"
 import youtubeVideo from "../videos/RITZY-new.mp4"
 import macbookBG from "../images/macbook-render.png"
