@@ -6,3 +6,50 @@
         padding:0 15px;
     }
 }
+.terms-page{
+    h1,h2,h3,h4,h5,h6{
+        width:100%;
+        &:after{
+            right:auto;
+        }
+    }
+    a{
+        color:#fff;
+    }
+    p{
+        width:100%;
+        @include responsive-font-size (
+            $min-font-size: 0.8em,
+            $max-font-size: 1em,
+            $min-screen-width: 640px,
+            $max-screen-width: 1200px,
+            $font-size-step: 0.1em /* optional, default: 0.1em */
+        );
+    }
+    h5{
+        @include responsive-font-size (
+            $min-font-size: 1em,
+            $max-font-size: 1.5em,
+            $min-screen-width: 640px,
+            $max-screen-width: 1200px,
+            $font-size-step: 0.1em /* optional, default: 0.1em */
+        );
+    }
+    h6{
+        @include responsive-font-size (
+            $min-font-size: 1em,
+            $max-font-size: 1.2em,
+            $min-screen-width: 640px,
+            $max-screen-width: 1200px,
+            $font-size-step: 0.1em /* optional, default: 0.1em */
+        );
+    }
+    ul{
+        width:100%;
+    }
+    .intro{
+        p{
+            margin:0!important;
+        }
+    }
+}

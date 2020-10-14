@@ -40,8 +40,6 @@ export default class Footer extends React.Component {
           </ul>
           <ul className="terms">
             <li><a href="/terms">Terms</a></li>
-            <li><a href="/privacy">Privacy</a></li>
-            <li><a href="/cookies">Cookies</a></li>
           </ul>
         </div>
     </footer>

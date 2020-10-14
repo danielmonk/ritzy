@@ -335,50 +335,50 @@ class Header extends React.Component {
               <div className="opening--times">
                 <Fade>
                 <div className="opening--time">
-                  <div className="opening--day">Mon</div>
-                  { /*
-                  <div className="opening--start">11:00am</div>
-                  <span>-</span>
-                  <div className="opening--end">7:00pm</div>
-                  */ }
-                  <span className="closed starting">Starting from 2nd November</span>
+                <div className="opening--day">Mon</div>
+                { /*
+                <div className="opening--start">11:00am</div>
+                <span>-</span>
+                <div className="opening--end">7:00pm</div>
+                */ }
+                <span className="closed starting">Starting from 2nd November</span>
                 </div>
                 <div className="opening--time">
-                  <div className="opening--day">Tue</div>
-                  <div className="opening--start">11:00am</div>
-                  <span>-</span>
-                  <div className="opening--end">7:00pm</div>
+                <div className="opening--day">Tue</div>
+                <div className="opening--start">11:00am</div>
+                <span>-</span>
+                <div className="opening--end">7:00pm</div>
                 </div>
                 <div className="opening--time">
-                  <div className="opening--day">Wed</div>
-                  <div className="opening--start">11:00am</div>
-                  <span>-</span>
-                  <div className="opening--end">7:00pm</div>
+                <div className="opening--day">Wed</div>
+                <div className="opening--start">11:00am</div>
+                <span>-</span>
+                <div className="opening--end">7:00pm</div>
                 </div>
                 <div className="opening--time">
-                  <div className="opening--day">Thu</div>
-                  <div className="opening--start">9:00am</div>
-                  <span>-</span>
-                  <div className="opening--end">8:00pm</div>
+                <div className="opening--day">Thu</div>
+                <div className="opening--start">10:00am</div>
+                <span>-</span>
+                <div className="opening--end">8:00pm</div>
                 </div>
                 <div className="opening--time">
-                  <div className="opening--day">Fri</div>
-                  <div className="opening--start">9:00am</div>
-                  <span>-</span>
-                  <div className="opening--end">8:00pm</div>
+                <div className="opening--day">Fri</div>
+                <div className="opening--start">10:00am</div>
+                <span>-</span>
+                <div className="opening--end">8:00pm</div>
                 </div>
                 <div className="opening--time">
-                  <div className="opening--day">Sat</div>
-                  <div className="opening--start">8:00am</div>
-                  <span>-</span>
-                  <div className="opening--end">16:00pm</div>
+                <div className="opening--day">Sat</div>
+                <div className="opening--start">9:00am</div>
+                <span>-</span>
+                <div className="opening--end">16:00pm</div>
                 </div>
                 <div className="opening--time">
-                  <div className="opening--day">Sun</div>
-                  <span className="closed">Closed</span>
+                <div className="opening--day">Sun</div>
+                <span className="closed">Closed</span>
                 </div>
                 </Fade>
-              </div>
+            </div>
               <div className="opening--message">
                 <p>Out of hours cuts can be booked for after hours fee</p>
               </div>

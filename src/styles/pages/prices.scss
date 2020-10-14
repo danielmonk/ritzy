@@ -1,0 +1,11 @@
+.prices{
+    flex-wrap:wrap;
+    .price{
+        width:100%;
+        h5{
+            &:after{
+                right:auto;
+            }
+        }
+    }
+}
