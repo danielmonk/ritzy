@@ -1,10 +1,11 @@
 $duration: 10s;
 .footer{
     background:#161618;
-    padding:25px 0;
+    padding:25px 0 15px;
     overflow-x:hidden;
     @media only screen and (min-width : $ipad){
         //padding:50px 0;
+        padding:25px 0;
     }
     &--menu{
         width: 100%;
@@ -17,20 +18,24 @@ $duration: 10s;
             display: flex;
             padding: 0;
             justify-content: space-between;
+            flex-wrap:wrap;
             @include responsive-font-size (
-                $min-font-size: 0.8em,
+                $min-font-size: 0.7em,
                 $max-font-size: 0.8em,
                 $min-screen-width: 640px,
                 $max-screen-width: 1200px,
                 $font-size-step: 0.1em /* optional, default: 0.1em */
                 );
+                @media only screen and (min-width : $breakpoint){
+                   flex-wrap:nowrap;
+                }
             li{
                 display:inline-block;
                 margin:0 15px;
                 color: #fff;
                 font-weight: bold;
                 text-transform: uppercase;
-                letter-spacing: 5px;
+                letter-spacing: 2.5px;
                 @include responsive-font-size (
                     $min-font-size: 0.8em,
                     $max-font-size: 1em,
@@ -38,6 +43,9 @@ $duration: 10s;
                     $max-screen-width: 1200px,
                     $font-size-step: 0.1em /* optional, default: 0.1em */
                 );
+                @media only screen and (min-width : $breakpoint){
+                    letter-spacing: 5px;
+                 }
                 a{
                     color:#fff;
                     text-decoration: none;
@@ -47,7 +55,12 @@ $duration: 10s;
                 }
             }
             &.terms{
-                justify-content: normal;
+                //justify-content: normal;
+                margin-top:2em;
+                @media only screen and (min-width : $breakpoint){
+                    justify-content: normal;
+                    margin-top:0;
+                }
             }
         }
     }
@@ -103,6 +116,7 @@ body{
     position:relative;
     margin:0 auto;
     max-width: 500px;
+    width:90%;
 
     @media only screen and (min-width : $breakpoint){
         padding: 2.5% 5%;

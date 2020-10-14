@@ -19,6 +19,10 @@
     }
     &__text{
         width:100%;
+        margin-bottom:2em;
+        @media only screen and (min-width : $breakpoint){
+           margin-bottom:0;
+        }
         p{
             margin:0px;
             line-height:1.25;
@@ -33,10 +37,13 @@
                 background: #fff;
                 position: absolute;
                 left: 0;
-                bottom: -20px;
+                bottom: -10px;
                 width: 50%;
                 right: 0;
                 margin: 0 auto;
+                @media only screen and (min-width : $breakpoint){
+                    bottom: -20px;
+                }
             }
         }
         h5{
@@ -44,6 +51,14 @@
             a{
                 text-decoration: none;
                 color:#fff;
+            }
+            &:after{
+                bottom:-8px;
+                width:25%;
+                @media only screen and (min-width : $breakpoint){
+                    bottom:-20px;
+                    width:50%;
+                }
             }
         }
     }
