@@ -390,7 +390,7 @@ class Header extends React.Component {
           <div className="content--wrapper">
             <div className="column centered">
                 <div className="contact__text">
-                  <h5><a href="mailto:danieljmonk@gmail.com">Contact <strong>Us</strong></a></h5>
+                  <h5>Contact <strong>Us</strong></h5>
                 </div>
             </div>
           </div>

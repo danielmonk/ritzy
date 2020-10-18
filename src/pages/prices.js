@@ -56,7 +56,7 @@ class Header extends React.Component {
                                 <p>45 - 60 mins. £25. </p>
                             </div>
                             <div className="price">
-                                <h5>Under 16's</h5>
+                                <h5>Under 16's (Ages 11 - 15)</h5>
                                 <p>£15</p>
                             </div>
                         </section>
@@ -128,7 +128,7 @@ class Header extends React.Component {
                     <div className="content--wrapper">
                         <div className="column centered">
                             <div className="contact__text">
-                            <h5><a href="mailto:danieljmonk@gmail.com">Contact <strong>Us</strong></a></h5>
+                            <h5>Contact <strong>Us</strong></h5>
                             </div>
                         </div>
                     </div>

@@ -39,20 +39,13 @@ class Header extends React.Component {
                     <Fade>
                         <section className="intro">
                             <div className="intro--text">
-                                <p>Ritzy studios is a creative hair / photography studio in the heart of Peterborough. Our studio Goal is to create & express through our work to show the public what we have to offer.</p>
-                            </div>
-                            <div className="intro--photo">
-                                <img src={ritzyStudio3}></img> 
+                                <p>Please use the booking system below to book in for an appointment at Ritzy Studios.</p>
+                                <p>If you have any questions please <a href="/contact">contact us.</a></p>
                             </div>
                         </section>
-                        <section className="rules">
-                            <h3>Shop Rules</h3>
-                            <ul>
-                                <li>If you cancel within <strong>24 hours</strong> of the appointment we can charge <strong>100%</strong> of the service booked.</li>
-                                <li>If more than <strong>10 minutes</strong> late to the appointment, the stylist decides if they have enough time to provide the service, if not you <strong>will</strong> be charged.</li>
-                                <li>If any of the above have taken place &amp; you haven’t paid for the service you will be <strong>blacklisted</strong> from booking with us again.</li>
-                                <li>Most important rule. Let us <strong>create</strong>, you don’t <strong>hate</strong>.</li>
-                            </ul>
+                        <section className="booking">
+                            <script nonce="4WfiqsFusaOGBFAfb15JvA==" src="https://nearcut.com/secure_widget.js"></script>
+                            <div id="nearcut" data-domain="https://iframe-12444.nearcut.com"></div>
                         </section>
                     </Fade>
                     </div>
