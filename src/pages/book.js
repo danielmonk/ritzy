@@ -27,13 +27,13 @@ class Header extends React.Component {
     return (
       <Layout>
         <SEO title="About" keywords={[`Ritzy Studios`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
-        <div className="page page--about">
+        <div className="page page--book">
             <div id="about-page" className="about-page">
                 <div className="content--wrapper">
                     <div>
                     <Fade>
                     <header className="header--page">
-                        <h2>About</h2>
+                        <h2>Book now</h2>
                     </header>
                     </Fade>
                     <Fade>
