@@ -199,7 +199,7 @@ class Header extends React.Component {
                 <div className="booking-cta__content--right">
                 <Fade>
                 <div>
-                  <a className="button button--white" href="/book">Book Now</a>
+                  <a className="button button--white" href="https://ritzyhairstudio.nearcut.com/book/">Book Now</a>
                 </div>
                 </Fade>
                 </div>

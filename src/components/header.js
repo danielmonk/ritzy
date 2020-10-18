@@ -72,7 +72,7 @@ export default class Header extends React.Component {
         <li><a href="/prices">Prices</a></li>
         <li><a href="/gallery">Gallery</a></li>
         <li><a href="/contact">Contact</a></li>
-        <li className="book"><a href="/book"><span>Book Now</span></a>Book Now</li>
+        <li className="book"><a href="https://ritzyhairstudio.nearcut.com/book/"><span>Book Now</span></a>Book Now</li>
         </ul>
       </div>
     </header>
@@ -82,7 +82,7 @@ export default class Header extends React.Component {
           <li><a href="/prices">Prices</a></li>
           <li><a href="/gallery">Gallery</a></li>
           <li><a href="/contact">Contact</a></li>
-          <li><a href="/book">Book Now</a></li>
+          <li><a href="https://ritzyhairstudio.nearcut.com/book/">Book Now</a></li>
         </ul>
     </div>
   </div>
