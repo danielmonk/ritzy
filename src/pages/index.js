@@ -184,7 +184,7 @@ class Header extends React.Component {
           </section>
 
 
-          { /*
+         
           <section id="booking-cta" className="booking-cta">
             <div className="content--wrapper">
               <div className="booking-cta__content">
@@ -199,15 +199,15 @@ class Header extends React.Component {
                 <div className="booking-cta__content--right">
                 <Fade>
                 <div>
-                  <a className="button button--white" href="https://www.fresha.com/providers/ritzy-studios-kk1eohva?pId=392894">Book Now</a>
+                  <a className="button button--white" href="/book">Book Now</a>
                 </div>
                 </Fade>
                 </div>
               </div>
             </div>
           </section>
-          */ }
 
+          { /*
         <section id="booking-cta" className="booking-cta">
             <div className="content--wrapper">
               <div className="booking-cta__content">
@@ -224,6 +224,7 @@ class Header extends React.Component {
               </div>
             </div>
           </section>
+        */ }
 
           <section id="skills">
             <div className="content--wrapper">
