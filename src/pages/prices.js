@@ -41,19 +41,19 @@ class Header extends React.Component {
                         <section className="prices">
                             <div className="price">
                                 <h5>Gents Cut</h5>
-                                <p>Grade 0.5+, 30 mins. £15.</p>
+                                <p>£15.</p>
                             </div>
                             <div className="price">
                                 <h5>Gents Cut & Beard</h5>
-                                <p>Grade 0.5+, 30 - 45 mins. £20.</p>
+                                <p>£20.</p>
                             </div>
                             <div className="price">
                                 <h5>Skin Fade</h5>
-                                <p>30 - 45 mins. £20.</p>
+                                <p>£20.</p>
                             </div>
                             <div className="price">
                                 <h5>Skin Fade & Beard</h5>
-                                <p>45 - 60 mins. £25. </p>
+                                <p>£25. </p>
                             </div>
                             <div className="price">
                                 <h5>Under 16's (Ages 11 - 15)</h5>
