@@ -38,48 +38,6 @@ export default class SimpleSlider extends Component {
                 </Fade>
               </div>
             </div>
-                <Slider {...settings} className="slider slick-slider--video-title">
-                <div>
-                    <div className="cover " style={{backgroundImage: `url(${this.props.insta1})`}} alt="Ritzy Barbers, Peterborough Skin Fade" />
-                    <a href={this.props.insta1Link} target="_blank" ></a>
-                </div>
-                <div>
-                    <div className="cover " style={{backgroundImage: `url(${this.props.insta2})`}} alt="Ritzy Barbers, Peterborough Skin Fade" />
-                    <a href={this.props.insta2Link} target="_blank" ></a>
-                </div>
-                <div>
-                    <div className="cover " style={{backgroundImage: `url(${this.props.insta3})`}} alt="Ritzy Barbers, Peterborough Skin Fade" />
-                    <a href={this.props.insta3Link} target="_blank" ></a>
-                </div>
-                <div>
-                    <div className="cover " style={{backgroundImage: `url(${this.props.insta4})`}} alt="Ritzy Barbers, Peterborough Skin Fade" />
-                    <a href={this.props.insta4Link} target="_blank" ></a>
-                </div>
-                <div>
-                    <div className="cover " style={{backgroundImage: `url(${this.props.insta5})`}} alt="Ritzy Barbers, Peterborough Skin Fade" />
-                    <a href={this.props.insta5Link} target="_blank" ></a>
-                </div>
-                <div>
-                    <div className="cover " style={{backgroundImage: `url(${this.props.insta6})`}} alt="Ritzy Barbers, Peterborough Skin Fade" />
-                    <a href={this.props.insta6Link} target="_blank" ></a>
-                </div>
-                <div>
-                    <div className="cover " style={{backgroundImage: `url(${this.props.insta7})`}} alt="Ritzy Barbers, Peterborough Skin Fade" />
-                    <a href={this.props.insta7Link} target="_blank" ></a>
-                </div>
-                <div>
-                    <div className="cover " style={{backgroundImage: `url(${this.props.insta8})`}} alt="Ritzy Barbers, Peterborough Skin Fade" />
-                    <a href={this.props.insta8Link} target="_blank" ></a>
-                </div>
-                <div>
-                    <div className="cover " style={{backgroundImage: `url(${this.props.insta9})`}} alt="Ritzy Barbers, Peterborough Skin Fade" />
-                    <a href={this.props.insta9Link} target="_blank" ></a>
-                </div>
-                <div>
-                    <div className="cover " style={{backgroundImage: `url(${this.props.insta10})`}} alt="Ritzy Barbers, Peterborough Skin Fade" />
-                    <a href={this.props.insta10Link} target="_blank" ></a>
-                </div>
-                </Slider>
         </section>
     );
   }

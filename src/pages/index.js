@@ -14,9 +14,10 @@ import ritzy3 from "../images/ritzy-collate-1.png"
 import ritzy4 from "../images/ritzy-4.jpg"
 import insta from "../images/instagram.png"
 import facebook from "../images/facebook.png"
-import iby from "../images/ritzy-new.png"
+import iby from "../images/ritzy-1.png"
 import asap_blends from "../images/asapblends.jpg"
 import darkfader from "../images/darkfader.jpg"
+import barberjtheo from "../images/jtheo-1.png"
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import InstaSlider from '../components/InstaSlider';
 let instaPhoto1 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/117795878_1250199461991549_3576501364359053768_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=109&_nc_ohc=_G5PxI7NTm4AX9rZB43&oh=513fe279817825e6e0d30e7eca901d25&oe=5F894506"
@@ -295,6 +296,14 @@ class Header extends React.Component {
                       <a className="insta" href="https://www.instagram.com/darkfaderr__" target="_blank"></a>
                     </div>
                     <p className="name">darkfader</p>
+                    <p className="title">Stylist</p>
+                  </div>
+                  <div className="column">
+                    <div className="photo">
+                      <img src={barberjtheo}></img>
+                      <a className="insta" href="https://www.instagram.com/barberjtheo" target="_blank"></a>
+                    </div>
+                    <p className="name">barberjtheo</p>
                     <p className="title">Stylist</p>
                   </div>
                 </div>
