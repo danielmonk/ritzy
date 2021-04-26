@@ -69,8 +69,6 @@ class Header extends React.Component {
                             <div className="opening--time">
                             <div className="opening--day">Mon</div>
                             <span className="closed">Closed</span>
-                            <span>-</span>
-                            <div className="opening--end">7:00pm</div>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Tue</div>
