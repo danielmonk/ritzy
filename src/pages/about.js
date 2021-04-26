@@ -68,7 +68,7 @@ class Header extends React.Component {
                             <Fade>
                             <div className="opening--time">
                             <div className="opening--day">Mon</div>
-                            <div className="opening--start">11:00am</div>
+                            <span className="closed">Closed</span>
                             <span>-</span>
                             <div className="opening--end">7:00pm</div>
                             </div>
