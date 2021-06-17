@@ -4,15 +4,15 @@ import SEO from "../components/seo"
 import SimpleReactLightbox from "simple-react-lightbox";
 import Fade from 'react-reveal/Fade';
 import { SRLWrapper } from "simple-react-lightbox";
-let instaPhoto1 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/117795878_1250199461991549_3576501364359053768_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=109&_nc_ohc=_G5PxI7NTm4AX9rZB43&oh=513fe279817825e6e0d30e7eca901d25&oe=5F894506"
+let instaPhoto1 = "../images/ig-1.jpeg";
 let insta1Link = "https://www.instagram.com/p/CD9PcGcD_Nd/"
-let instaPhoto2 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/109811559_586866545310110_141645576686131022_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=102&_nc_ohc=cTFLx5f9H9oAX-2itLJ&_nc_tp=18&oh=c590959ebd566da74a7ee4f72116b482&oe=5F942440"
+let instaPhoto2 = "../images/ig-2.jpeg";
 let insta2Link = "https://www.instagram.com/p/CC36kx5jV-L/"
-let instaPhoto3 = "https://scontent-lht6-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/107869648_609295649723384_3063073575809310173_n.jpg?_nc_ht=scontent-lht6-1.cdninstagram.com&_nc_cat=108&_nc_ohc=KFA1s29EyIwAX_enfig&_nc_tp=15&oh=27ac359a1c64d13c2686307348704299&oe=5F91565E"
+let instaPhoto3 = "../images/ig-3.pnjpegg";
 let insta3Link = "https://www.instagram.com/p/CCl3PJVjol4/"
-let instaPhoto4 = "https://scontent-lht6-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/101013839_723611708178978_1691840401939268412_n.jpg?_nc_ht=scontent-lht6-1.cdninstagram.com&_nc_cat=106&_nc_ohc=ePkf91iDhJoAX_HD8kG&_nc_tp=19&oh=855f96c16d64f0b551e13dffcd6453ab&oe=5F91F86B"
+let instaPhoto4 = "../images/ig-4.jpeg";
 let insta4Link = "https://www.instagram.com/p/CAujdf_julb/"
-let instaPhoto5 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/97572216_1092615757781995_5210964166121146314_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=107&_nc_ohc=01yQ3H-jS3YAX_3gCEV&_nc_tp=15&oh=2e93bb5ca784c33f00f1993172c7b41a&oe=5F92092B"
+let instaPhoto5 = "../images/ig-5.jpeg";
 let insta5Link = "https://www.instagram.com/p/CABSzWsjSFD/"
 let instaPhoto6 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/94837887_243375443533012_3976964820012419774_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=104&_nc_ohc=hS5SKhneGWIAX8X4SHk&_nc_tp=15&oh=9275146e28285fe61c460c3ce167e510&oe=5F935FE2"
 let insta6Link = "https://www.instagram.com/p/B_k2-5IjwsF/"
@@ -61,21 +61,6 @@ class Gallery extends React.Component {
                     </div>
                     <div className="gallery-block__single">
                         <img src={instaPhoto5}></img>
-                    </div>
-                    <div className="gallery-block__single">
-                        <img src={instaPhoto6}></img>
-                    </div>
-                    <div className="gallery-block__single">
-                        <img src={instaPhoto7}></img>
-                    </div>
-                    <div className="gallery-block__single">
-                        <img src={instaPhoto8}></img>
-                    </div>
-                    <div className="gallery-block__single">
-                        <img src={instaPhoto9}></img>
-                    </div>
-                    <div className="gallery-block__single">
-                        <img src={instaPhoto10}></img>
                     </div>
                 </section>
                 </Fade>
