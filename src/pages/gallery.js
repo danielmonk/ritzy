@@ -4,15 +4,15 @@ import SEO from "../components/seo"
 import SimpleReactLightbox from "simple-react-lightbox";
 import Fade from 'react-reveal/Fade';
 import { SRLWrapper } from "simple-react-lightbox";
-let instaPhoto1 = "../images/ig-1.jpeg";
+import instaPhoto1 from "../images/ig-1.jpeg";
 let insta1Link = "https://www.instagram.com/p/CD9PcGcD_Nd/"
-let instaPhoto2 = "../images/ig-2.jpeg";
+import instaPhoto2 from "../images/ig-2.jpeg";
 let insta2Link = "https://www.instagram.com/p/CC36kx5jV-L/"
-let instaPhoto3 = "../images/ig-3.pnjpegg";
+import instaPhoto3 from "../images/ig-3.jpeg";
 let insta3Link = "https://www.instagram.com/p/CCl3PJVjol4/"
-let instaPhoto4 = "../images/ig-4.jpeg";
+import instaPhoto4 from "../images/ig-4.jpeg";
 let insta4Link = "https://www.instagram.com/p/CAujdf_julb/"
-let instaPhoto5 = "../images/ig-5.jpeg";
+import instaPhoto5 from "../images/ig-5.jpeg";
 let insta5Link = "https://www.instagram.com/p/CABSzWsjSFD/"
 let instaPhoto6 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/94837887_243375443533012_3976964820012419774_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=104&_nc_ohc=hS5SKhneGWIAX8X4SHk&_nc_tp=15&oh=9275146e28285fe61c460c3ce167e510&oe=5F935FE2"
 let insta6Link = "https://www.instagram.com/p/B_k2-5IjwsF/"
