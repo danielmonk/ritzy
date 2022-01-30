@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 import youtubeBGImg from "../images/ritzy-placeholder.png"
 import youtubeVideo from "../videos/RITZY-new.mp4"
 import macbookBG from "../images/macbook-render.png"
-import ritzylogo from "../images/ritzy-logo.png"
+import ritzylogo from "../images/ritzy-logo-new.png"
 import ritzy1 from "../images/ritzy-studios-1.png"
 import ritzy2 from "../images/ritzy-studios-2.png"
 import ritzy3 from "../images/ritzy-collate-1.png"
