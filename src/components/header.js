@@ -55,7 +55,7 @@ export default class Header extends React.Component {
       <div className="header--logo">
         <div className="logo">
           <Link to="/"></Link><img src={LogoScroll}></img>
-          <h1>Ritzy Studios</h1>
+          <h1>Ritzy Barbers</h1>
         </div>
       </div>
       <div className="header--nav">

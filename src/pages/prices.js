@@ -26,7 +26,7 @@ class Header extends React.Component {
   render () {
     return (
       <Layout>
-        <SEO title="Prices" keywords={[`Ritzy Studios`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
+        <SEO title="Prices" keywords={[`Ritzy Barbers`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
         <div className="page page--about">
             <div id="about-page" className="about-page">
                 <div className="content--wrapper">
@@ -181,10 +181,10 @@ class Header extends React.Component {
                                 </LoadScript>
                             </div>
                             <div className="contact--address">
-                            <strong>Ritzy Studios</strong><br />
-                            62 Albert Pl,<br />
-                            Peterborough,<br />
-                            PE1 1DD
+                            <strong>Ritzy Barbers</strong><br />
+                  13 Queens Walk,<br />
+                  Peterborough,<br />
+                  PE2 9AN
                             </div>
                         </div>
                         </div>

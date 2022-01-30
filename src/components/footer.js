@@ -35,7 +35,7 @@ export default class Footer extends React.Component {
     <footer className="footer">
         <div className="footer--menu">
           <ul>
-            <li>© Ritzy Studios 2020. All rights reserved</li>
+            <li>© Ritzy Barbers 2022. All rights reserved</li>
             <li>Made by <a target="_blank" href="https://danielmonk.io">danielmonk.io</a></li>
           </ul>
           <ul className="terms">

@@ -26,7 +26,7 @@ class Header extends React.Component {
   render () {
     return (
       <Layout>
-        <SEO title="Terms" keywords={[`Ritzy Studios`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
+        <SEO title="Terms" keywords={[`Ritzy Barbers`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
         <div className="page page--about">
             <div id="about-page" className="terms-page">
                 <div className="content--wrapper">
@@ -53,7 +53,7 @@ class Header extends React.Component {
                         <p><strong>Country</strong> refers to:  United Kingdom</p>
                         </li>
                         <li>
-                        <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Ritzy Studios, 62 ALBERT PL, PETERBOROUGH, PE1 1DD.</p>
+                        <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Ritzy Barbers, 13 QUEENS WALK, PETERBOROUGH, PE2 9AN.</p>
                         </li>
                         <li>
                         <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
@@ -68,7 +68,7 @@ class Header extends React.Component {
                         <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
                         </li>
                         <li>
-                        <p><strong>Website</strong> refers to RItzy Studios, accessible from <a href="https://www.ritzystudios.com" rel="external nofollow noopener" target="_blank">https://www.ritzystudios.com</a></p>
+                        <p><strong>Website</strong> refers to Ritzy Barbers, accessible from <a href="https://www.ritzybarbers.com" rel="external nofollow noopener" target="_blank">https://www.ritzybarbers.com</a></p>
                         </li>
                         <li>
                         <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
@@ -117,7 +117,7 @@ class Header extends React.Component {
                         <h5>Contact Us</h5>
                         <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
                         <ul>
-                        <li>By email: info@ritzystudios.com</li>
+                        <li>By email: info@ritzybarbers.com</li>
                         </ul>
                         </section>
                     </Fade>

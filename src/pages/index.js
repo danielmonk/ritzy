@@ -124,7 +124,7 @@ class Header extends React.Component {
   render () {
     return (
       <Layout>
-        <SEO title="Home" keywords={[`Ritzy Studios`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
+        <SEO title="Home" keywords={[`Ritzy Barbers`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
         <div className="page page--home">
           <section id="top" className="top">
             <div className="homepage-hero-module">
@@ -159,7 +159,7 @@ class Header extends React.Component {
               <div>
                   <div className="column centered">
                     <Fade> 
-                    <h4>Welcome to <strong>Ritzy</strong> Hair Studios</h4>
+                    <h4>Welcome to <strong>Ritzy</strong> Barbers</h4>
                     <h6>A brand new experience, in the heart of Peterborough.</h6>
                     <p>We've been working in the hair industry for over <strong>5 years</strong> & have developed the highest level of services. </p>
                     </Fade>
@@ -295,14 +295,6 @@ class Header extends React.Component {
                       <a className="insta" href="https://www.instagram.com/darkfaderr__" target="_blank"></a>
                     </div>
                     <p className="name">darkfader</p>
-                    <p className="title">Stylist</p>
-                  </div>
-                  <div className="column">
-                    <div className="photo">
-                      <img src={barberjtheo}></img>
-                      <a className="insta" href="https://www.instagram.com/barberjtheo" target="_blank"></a>
-                    </div>
-                    <p className="name">barberjtheo</p>
                     <p className="title">Stylist</p>
                   </div>
                 </div>
@@ -449,10 +441,10 @@ class Header extends React.Component {
                     </LoadScript>
                   </div>
                   <div className="contact--address">
-                  <strong>Ritzy Studios</strong><br />
-                  62 Albert Pl,<br />
+                  <strong>Ritzy Barbers</strong><br />
+                  13 Queens Walk,<br />
                   Peterborough,<br />
-                  PE1 1DD
+                  PE2 9AN
                 </div>
               </div>
             </div>

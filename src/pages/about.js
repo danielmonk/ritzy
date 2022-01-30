@@ -26,7 +26,7 @@ class Header extends React.Component {
   render () {
     return (
       <Layout>
-        <SEO title="About" keywords={[`Ritzy Studios`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
+        <SEO title="About" keywords={[`Ritzy Barbers`, `Ritzy`, `Peterborough Barbers`, `Hair Peterborough`, `Hair Stylist Peterborough`, `Hair Colouring Peterborough`, `Mens Hair Peterborough`, `Skin Fade Peterborough` ,`Beard Trim Peterborough` ,`Hair and Beard Peterborough`]} />
         <div className="page page--about">
             <div id="about-page" className="about-page">
                 <div className="content--wrapper">
@@ -39,7 +39,7 @@ class Header extends React.Component {
                     <Fade>
                         <section className="intro">
                             <div className="intro--text">
-                                <p>Ritzy studios is a creative hair / photography studio in the heart of Peterborough. Our studio Goal is to create & express through our work to show the public what we have to offer.</p>
+                                <p>Ritzy Barbers is a creative hair / photography studio in the heart of Peterborough. Our studio Goal is to create & express through our work to show the public what we have to offer.</p>
                             </div>
                             <div className="intro--photo">
                                 <img src={ritzyStudio3}></img> 
@@ -172,10 +172,10 @@ class Header extends React.Component {
                                 </LoadScript>
                             </div>
                             <div className="contact--address">
-                            <strong>Ritzy Studios</strong><br />
-                            62 Albert Pl,<br />
-                            Peterborough,<br />
-                            PE1 1DD
+                            <strong>Ritzy Barbers</strong><br />
+                  13 Queens Walk,<br />
+                  Peterborough,<br />
+                  PE2 9AN
                             </div>
                         </div>
                         </div>
