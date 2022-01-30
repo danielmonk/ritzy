@@ -63,8 +63,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 52.570220,
-  lng: -0.245305,
+  lat: 52.5630014254675,
+  lng: -0.24414199943945175,
 };
 
 function SpringDemo() {
