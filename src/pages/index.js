@@ -145,9 +145,10 @@ class Header extends React.Component {
               <div className="video-background">
                 <div className="video-foreground">
                   <div className="fallback-img" style={styles.youtubeBG}></div>
-                  <video autoPlay muted loop playsInline>
+                  {/*<video autoPlay muted loop playsInline>
                     <source src={youtubeVideo} type="video/mp4" />
                   </video>
+                  8*/}
                 </div>
                 <div className="purple-overlay"></div>
               </div>
