@@ -138,7 +138,7 @@ class Header extends React.Component {
                 </div>
                 <div className="socials">
                   <ul>
-                    <li className="instagram"><a href="https://instagram.com/ritzyhairstudio" target="_blank"></a><img src={insta}></img></li>
+                    <li className="instagram"><a href="https://instagram.com/ritzybarbers" target="_blank"></a><img src={insta}></img></li>
                   </ul>
                 </div>
               </div>
