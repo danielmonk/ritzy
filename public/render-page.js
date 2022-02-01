@@ -26,8 +26,7 @@ function _assertThisInitialized(self) {
   return self;
 }
 
-module.exports = _assertThisInitialized;
-module.exports.default = module.exports, module.exports.__esModule = true;
+module.exports = _assertThisInitialized, module.exports.__esModule = true, module.exports.default = module.exports;
 
 /***/ }),
 
@@ -50,14 +49,11 @@ function _extends() {
     }
 
     return target;
-  };
-
-  module.exports.default = module.exports, module.exports.__esModule = true;
+  }, module.exports.__esModule = true, module.exports.default = module.exports;
   return _extends.apply(this, arguments);
 }
 
-module.exports = _extends;
-module.exports.default = module.exports, module.exports.__esModule = true;
+module.exports = _extends, module.exports.__esModule = true, module.exports.default = module.exports;
 
 /***/ }),
 
@@ -75,8 +71,7 @@ function _inheritsLoose(subClass, superClass) {
   setPrototypeOf(subClass, superClass);
 }
 
-module.exports = _inheritsLoose;
-module.exports.default = module.exports, module.exports.__esModule = true;
+module.exports = _inheritsLoose, module.exports.__esModule = true, module.exports.default = module.exports;
 
 /***/ }),
 
@@ -92,8 +87,7 @@ function _interopRequireDefault(obj) {
   };
 }
 
-module.exports = _interopRequireDefault;
-module.exports.default = module.exports, module.exports.__esModule = true;
+module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports.default = module.exports;
 
 /***/ }),
 
@@ -103,7 +97,7 @@ module.exports.default = module.exports, module.exports.__esModule = true;
   \***********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js").default;
+var _typeof = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/typeof.js").default;
 
 function _getRequireWildcardCache(nodeInterop) {
   if (typeof WeakMap !== "function") return null;
@@ -155,8 +149,7 @@ function _interopRequireWildcard(obj, nodeInterop) {
   return newObj;
 }
 
-module.exports = _interopRequireWildcard;
-module.exports.default = module.exports, module.exports.__esModule = true;
+module.exports = _interopRequireWildcard, module.exports.__esModule = true, module.exports.default = module.exports;
 
 /***/ }),
 
@@ -181,8 +174,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
-module.exports = _objectWithoutPropertiesLoose;
-module.exports.default = module.exports, module.exports.__esModule = true;
+module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports.default = module.exports;
 
 /***/ }),
 
@@ -196,14 +188,11 @@ function _setPrototypeOf(o, p) {
   module.exports = _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
     o.__proto__ = p;
     return o;
-  };
-
-  module.exports.default = module.exports, module.exports.__esModule = true;
+  }, module.exports.__esModule = true, module.exports.default = module.exports;
   return _setPrototypeOf(o, p);
 }
 
-module.exports = _setPrototypeOf;
-module.exports.default = module.exports, module.exports.__esModule = true;
+module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports.default = module.exports;
 
 /***/ }),
 
@@ -216,25 +205,14 @@ module.exports.default = module.exports, module.exports.__esModule = true;
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    module.exports = _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-
-    module.exports.default = module.exports, module.exports.__esModule = true;
-  } else {
-    module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-
-    module.exports.default = module.exports, module.exports.__esModule = true;
-  }
-
-  return _typeof(obj);
+  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, module.exports.__esModule = true, module.exports.default = module.exports), _typeof(obj);
 }
 
-module.exports = _typeof;
-module.exports.default = module.exports, module.exports.__esModule = true;
+module.exports = _typeof, module.exports.__esModule = true, module.exports.default = module.exports;
 
 /***/ }),
 

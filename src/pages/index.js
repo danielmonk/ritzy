@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState, useEffect }  from 'react';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Typist from 'react-typist';
@@ -20,6 +20,7 @@ import darkfader from "../images/darkfader.jpg"
 import barberjtheo from "../images/jtheo-1.png"
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import InstaSlider from '../components/InstaSlider';
+import ScriptTag from 'react-script-tag';
 let instaPhoto1 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/117795878_1250199461991549_3576501364359053768_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=109&_nc_ohc=_G5PxI7NTm4AX9rZB43&oh=513fe279817825e6e0d30e7eca901d25&oe=5F894506"
 let insta1Link = "https://www.instagram.com/p/CD9PcGcD_Nd/"
 let instaPhoto2 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/109811559_586866545310110_141645576686131022_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=102&_nc_ohc=cTFLx5f9H9oAX-2itLJ&_nc_tp=18&oh=c590959ebd566da74a7ee4f72116b482&oe=5F942440"
@@ -40,8 +41,6 @@ let instaPhoto9 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/p1
 let insta9Link = "https://www.instagram.com/p/B7UK7tpAzmb/"
 let instaPhoto10 = "https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/75616364_189920152056493_571939182375379545_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=101&_nc_ohc=de4f6vAfvbIAX8mFquU&_nc_tp=18&oh=eaf35d61e732ba1bf234ca74f2f85a11&oe=5F93BE7D"
 let insta10Link = "https://www.instagram.com/p/B56A-1agxCN/"
-
-
 
 
 const styles = {
@@ -90,13 +89,18 @@ function SpringDemo() {
 </div>
 }
 
+
+
 class Header extends React.Component {
+
+  
 
   componentDidMount () {
 
     var scrollpos = window.scrollY;
     var header = document.querySelector(".header");
     var page = document.querySelector(".page");
+    var scroll1 = document.querySelector(".scroll1");
 
     header.classList.add("home");
 
@@ -118,6 +122,9 @@ class Header extends React.Component {
         else {
             remove_class_on_scroll();
         }
+
+        let offsetY = window.pageYOffset;
+        scroll1.style.cssText = `transform:translateY(${offsetY * -0.075}px)`;
     });
 
   }
@@ -171,11 +178,9 @@ class Header extends React.Component {
 
           <section id="image-block" className="image-block">
             <div className="content--wrapper content--wrapper--big">
-            <Fade> 
-              <div className="image">
+              <div className="image scroll1">
                 <img src={ritzy4} />
               </div>
-            </Fade>
             <Fade> 
               <div className="text">
                 <p>"Our cutting philosophy stems from the consultation. There is no such thing as <strong>can’t do</strong>, <strong>won’t do</strong> or <strong>don’t do</strong> The stylist is right behind them on hand to deliver their expert advice both <strong>professionally</strong> and <strong>technically</strong>"</p>
@@ -277,7 +282,7 @@ class Header extends React.Component {
                   <div className="column">
                     <div className="photo">
                       <img src={iby}></img>
-                      <a className="insta white" href="https://www.instagram.com/ritzybarber" target="_blank"></a>
+                      <a className="insta white" href="https://www.instagram.com/ritzybarbers" target="_blank"></a>
                     </div>
                     <p className="name">Ritzy</p>
                     <p className="title">Owner</p>
