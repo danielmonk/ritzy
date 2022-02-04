@@ -6,6 +6,8 @@
 
 // You can delete this file if you're not using it
 exports.createPages = ({ graphql, actions }) => {
-    const {createRedirect} = actions //actions is collection of many actions - https://www.gatsbyjs.org/docs/actions
-    createRedirect({ fromPath: 'ritzystudios.com', toPath: 'ritzybarbers.com', isPermanent: true });
-  }
+    const { createPage, createRedirect } = actions
+
+    createRedirect({ fromPath: 'https://ritzystudios.com/*', toPath: 'https://ritzybarbers.design/:splat', isPermanent: true, force: true })
+    createRedirect({ fromPath: 'https://www.ritzystudios.com/*', toPath: 'https://ritzybarbers.design/:splat', isPermanent: true, force: true })
+}

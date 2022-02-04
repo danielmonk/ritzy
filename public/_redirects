@@ -1,3 +1,4 @@
-# http and https need separate rules if you don’t force_ssl!
-http://ritzystudios.com* http://ritzybarbers.com:splat 301!
-https://ritzystudios.com* https://ritzybarbers.com;splat 301!
+
+## Created with gatsby-plugin-netlify
+https://ritzystudios.com/*  https://ritzybarbers.design/:splat  301!
+https://www.ritzystudios.com/*  https://ritzybarbers.design/:splat  301!
