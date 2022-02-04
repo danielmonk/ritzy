@@ -8,6 +8,6 @@
 exports.createPages = ({ graphql, actions }) => {
     const { createPage, createRedirect } = actions
 
-    createRedirect({ fromPath: 'https://ritzystudios.com/*', toPath: 'https://ritzybarbers.design/:splat', isPermanent: true, force: true })
-    createRedirect({ fromPath: 'https://www.ritzystudios.com/*', toPath: 'https://ritzybarbers.design/:splat', isPermanent: true, force: true })
+    createRedirect({ fromPath: 'https://ritzystudios.com/*', toPath: 'https://ritzybarbers.com/:splat', isPermanent: true, force: true })
+    createRedirect({ fromPath: 'https://www.ritzystudios.com/*', toPath: 'https://ritzybarbers.com/:splat', isPermanent: true, force: true })
 }
