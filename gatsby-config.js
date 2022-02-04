@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Ritzy Studios",
+    title: "Ritzy Barbers",
     author: "Daniel Monk",
-    description: "Ritzy studios is a creative hair / photography studio in the heart of Peterborough. Our studio Goal is to create & express through our work to show the public what we have to offer."
+    description: "Ritzy Barbers is a creative hair / photography studio in the heart of Peterborough. Our studio Goal is to create & express through our work to show the public what we have to offer."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
