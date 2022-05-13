@@ -5,9 +5,9 @@ import Typist from 'react-typist';
 import {useTrail, animated} from 'react-spring'
 import Fade from 'react-reveal/Fade';
 import youtubeBGImg from "../images/ritzy-placeholder.png"
-import youtubeVideo from "../videos/RITZY-new.mp4"
+import youtubeVideo from "../videos/Ritzy-Video-Banner.mp4"
 import macbookBG from "../images/macbook-render.png"
-import ritzylogo from "../images/ritzy-logo-new.png"
+import ritzylogo from "../images/ritzy-logo.png"
 import ritzy1 from "../images/ritzy-studios-1.png"
 import ritzy2 from "../images/ritzy-studios-2.png"
 import ritzy3 from "../images/ritzy-collate-1.png"
@@ -152,10 +152,9 @@ class Header extends React.Component {
               <div className="video-background">
                 <div className="video-foreground">
                   <div className="fallback-img" style={styles.youtubeBG}></div>
-                  {/*<video autoPlay muted loop playsInline>
+                  <video autoPlay muted loop playsInline>
                     <source src={youtubeVideo} type="video/mp4" />
                   </video>
-                  8*/}
                 </div>
                 <div className="purple-overlay"></div>
               </div>
@@ -450,7 +449,8 @@ class Header extends React.Component {
                   <strong>Ritzy Barbers</strong><br />
                   13 Queens Walk,<br />
                   Peterborough,<br />
-                  PE2 9AN
+                  PE2 9AN,<br />
+                  01733 732594
                 </div>
               </div>
             </div>

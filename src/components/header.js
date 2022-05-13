@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 //import Logo from "../components/images/logoImage"
 import Logo from "../images/ritzy-small.png"
-import LogoScroll from "../images/ritzy-logo-new.png"
+import LogoScroll from "../images/ritzy-logo.png"
 import '../js/helpers';
 
 export default class Header extends React.Component {

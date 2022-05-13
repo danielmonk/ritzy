@@ -175,7 +175,8 @@ class Header extends React.Component {
                             <strong>Ritzy Barbers</strong><br />
                   13 Queens Walk,<br />
                   Peterborough,<br />
-                  PE2 9AN
+                  PE2 9AN,<br />
+                  01733 732594
                             </div>
                         </div>
                         </div>

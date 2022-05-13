@@ -182,9 +182,10 @@ class Header extends React.Component {
                             </div>
                             <div className="contact--address">
                             <strong>Ritzy Barbers</strong><br />
-                  13 Queens Walk,<br />
+                            13 Queens Walk,<br />
                   Peterborough,<br />
-                  PE2 9AN
+                  PE2 9AN,<br />
+                  01733 732594
                             </div>
                         </div>
                         </div>
