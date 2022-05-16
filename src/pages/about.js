@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import ritzyStudio from "../images/ritzystudio.jpg"
 import ritzyStudio2 from "../images/ritzystudio2.jpg"
-import ritzyStudio3 from "../images/ritzy-placeholder.png"
+import ritzyStudio3 from "../images/ritzy-placeholder-new.png"
 
 const containerStyle = {
     width: '100%',
@@ -39,7 +39,7 @@ class Header extends React.Component {
                     <Fade>
                         <section className="intro">
                             <div className="intro--text">
-                                <p>Ritzy Barbers is a creative hair / photography studio in the heart of Peterborough. Our studio Goal is to create & express through our work to show the public what we have to offer.</p>
+                                <p>Ritzy Barbers is an urban shop just outside the city centre. Our goal is to create a relaxed environment that anyone can come vibe with us while getting top level work from some of the best barbers in the area</p>
                             </div>
                             <div className="intro--photo">
                                 <img src={ritzyStudio3}></img> 
@@ -51,13 +51,12 @@ class Header extends React.Component {
                                 <li>If you cancel within <strong>24 hours</strong> of the appointment we can charge <strong>100%</strong> of the service booked.</li>
                                 <li>If more than <strong>10 minutes</strong> late to the appointment, the stylist decides if they have enough time to provide the service, if not you <strong>will</strong> be charged.</li>
                                 <li>If any of the above have taken place &amp; you haven’t paid for the service you will be <strong>blacklisted</strong> from booking with us again.</li>
-                                <li>Most important rule. Let us <strong>create</strong>, you don’t <strong>hate</strong>.</li>
                             </ul>
                         </section>
                     </Fade>
                     </div>
                 </div>
-                    <section id="opening" className="opening">
+                <section id="opening" className="opening">
                         <div className="content--wrapper">
                         <div className="column centered">
                         <Fade>
@@ -72,33 +71,33 @@ class Header extends React.Component {
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Tue</div>
-                            <div className="opening--start">11:00am</div>
+                            <div className="opening--start">10:00am</div>
                             <span>-</span>
-                            <div className="opening--end">7:00pm</div>
+                            <div className="opening--end">6:00pm</div>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Wed</div>
-                            <div className="opening--start">11:00am</div>
+                            <div className="opening--start">10:00am</div>
+                            <span>-</span>
+                            <div className="opening--end">6:00pm</div>
+                            </div>
+                            <div className="opening--time">
+                            <div className="opening--day">Thu</div>
+                            <div className="opening--start">10:00am</div>
                             <span>-</span>
                             <div className="opening--end">7:00pm</div>
                             </div>
                             <div className="opening--time">
-                            <div className="opening--day">Thu</div>
-                            <div className="opening--start">09:00am</div>
-                            <span>-</span>
-                            <div className="opening--end">8:00pm</div>
-                            </div>
-                            <div className="opening--time">
                             <div className="opening--day">Fri</div>
-                            <div className="opening--start">09:00am</div>
+                            <div className="opening--start">10:00am</div>
                             <span>-</span>
-                            <div className="opening--end">8:00pm</div>
+                            <div className="opening--end">7:00pm</div>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Sat</div>
                             <div className="opening--start">9:00am</div>
                             <span>-</span>
-                            <div className="opening--end">16:00pm</div>
+                            <div className="opening--end">04:00pm</div>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Sun</div>

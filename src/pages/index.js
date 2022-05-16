@@ -267,43 +267,39 @@ class Header extends React.Component {
           </section>
 
           <section id="barbers" className="barbers">
-            <div className="content--wrapper">
+            <div>
                 <div className="column centered">
                   <Fade>
                   <h4>Our <strong>team</strong></h4>
                   <h6>All our barbers are of the highest merit and offer continuous high quality haircuts <strong>time after time.</strong></h6>
                   </Fade>
-                </div>
-              </div>
               <div className="content--wrapper">
               <Fade>
                 <div className="columns">
                   <div className="column">
-                    <div className="photo">
-                      <img src={iby}></img>
-                      <a className="insta white" href="https://www.instagram.com/ritzybarbers" target="_blank"></a>
-                    </div>
                     <p className="name">Ritzy</p>
                     <p className="title">Owner</p>
                   </div>
                   <div className="column">
-                    <div className="photo">
-                      <img src={asap_blends}></img>
-                      <a className="insta white" href="https://www.instagram.com/asap_blends" target="_blank"></a>
-                    </div>
                     <p className="name">asap_blends</p>
-                    <p className="title">Stylist</p>
+                    <p className="title">Senior Stylist</p>
                   </div>
                   <div className="column">
-                    <div className="photo">
-                      <img src={darkfader}></img>
-                      <a className="insta" href="https://www.instagram.com/darkfaderr__" target="_blank"></a>
-                    </div>
                     <p className="name">darkfader</p>
-                    <p className="title">Stylist</p>
+                    <p className="title">Senior Stylist</p>
+                  </div>
+                  <div className="column">
+                    <p className="name">Jaye</p>
+                    <p className="title">Senior Stylist</p>
+                  </div>
+                  <div className="column">
+                    <p className="name">Flex Fades</p>
+                    <p className="title">Junior Stylist</p>
                   </div>
                 </div>
               </Fade>
+              </div>
+              </div>
             </div>   
           </section>
 
@@ -346,33 +342,33 @@ class Header extends React.Component {
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Tue</div>
-                            <div className="opening--start">11:00am</div>
+                            <div className="opening--start">10:00am</div>
                             <span>-</span>
-                            <div className="opening--end">7:00pm</div>
+                            <div className="opening--end">6:00pm</div>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Wed</div>
-                            <div className="opening--start">11:00am</div>
+                            <div className="opening--start">10:00am</div>
+                            <span>-</span>
+                            <div className="opening--end">6:00pm</div>
+                            </div>
+                            <div className="opening--time">
+                            <div className="opening--day">Thu</div>
+                            <div className="opening--start">10:00am</div>
                             <span>-</span>
                             <div className="opening--end">7:00pm</div>
                             </div>
                             <div className="opening--time">
-                            <div className="opening--day">Thu</div>
-                            <div className="opening--start">09:00am</div>
-                            <span>-</span>
-                            <div className="opening--end">8:00pm</div>
-                            </div>
-                            <div className="opening--time">
                             <div className="opening--day">Fri</div>
-                            <div className="opening--start">09:00am</div>
+                            <div className="opening--start">10:00am</div>
                             <span>-</span>
-                            <div className="opening--end">8:00pm</div>
+                            <div className="opening--end">7:00pm</div>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Sat</div>
                             <div className="opening--start">9:00am</div>
                             <span>-</span>
-                            <div className="opening--end">16:00pm</div>
+                            <div className="opening--end">04:00pm</div>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Sun</div>

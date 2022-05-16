@@ -70,7 +70,7 @@ export default class Header extends React.Component {
         <ul>
         <li><a href="/about">About</a></li>
         <li><a href="/prices">Prices</a></li>
-        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/content">Content</a></li>
         <li><a href="/contact">Contact</a></li>
         <li className="book"><a href="https://ritzyhairstudio.nearcut.com/book/"><span>Book Now</span></a>Book Now</li>
         </ul>

@@ -34,7 +34,7 @@ class Header extends React.Component {
                     <Fade>
                     <header className="header--page">
                         <h2>Prices</h2>
-                        <p>Please see below for our list of services, their time length & prices. Any questions please just get in touch.</p>
+                        <p>Please see below for our list of services, please bare in mind different prices vary for different barbers. Prices below are walk-in prices, for booking prices please see the booking system. Any questions please just get in touch.</p>
                     </header>
                     </Fade>
                     <Fade>
@@ -56,7 +56,7 @@ class Header extends React.Component {
                                 <p>£25. </p>
                             </div>
                             <div className="price">
-                                <h5>Under 16's (Ages 11 - 15)</h5>
+                                <h5>Under 16's</h5>
                                 <p>£15</p>
                             </div>
                         </section>
@@ -75,39 +75,37 @@ class Header extends React.Component {
                             <Fade>
                             <div className="opening--time">
                             <div className="opening--day">Mon</div>
-                            <div className="opening--start">11:00am</div>
-                            <span>-</span>
-                            <div className="opening--end">7:00pm</div>
+                            <span className="closed">Closed</span>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Tue</div>
-                            <div className="opening--start">11:00am</div>
+                            <div className="opening--start">10:00am</div>
                             <span>-</span>
-                            <div className="opening--end">7:00pm</div>
+                            <div className="opening--end">6:00pm</div>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Wed</div>
-                            <div className="opening--start">11:00am</div>
+                            <div className="opening--start">10:00am</div>
+                            <span>-</span>
+                            <div className="opening--end">6:00pm</div>
+                            </div>
+                            <div className="opening--time">
+                            <div className="opening--day">Thu</div>
+                            <div className="opening--start">10:00am</div>
                             <span>-</span>
                             <div className="opening--end">7:00pm</div>
                             </div>
                             <div className="opening--time">
-                            <div className="opening--day">Thu</div>
-                            <div className="opening--start">09:00am</div>
-                            <span>-</span>
-                            <div className="opening--end">8:00pm</div>
-                            </div>
-                            <div className="opening--time">
                             <div className="opening--day">Fri</div>
-                            <div className="opening--start">09:00am</div>
+                            <div className="opening--start">10:00am</div>
                             <span>-</span>
-                            <div className="opening--end">8:00pm</div>
+                            <div className="opening--end">7:00pm</div>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Sat</div>
                             <div className="opening--start">9:00am</div>
                             <span>-</span>
-                            <div className="opening--end">16:00pm</div>
+                            <div className="opening--end">04:00pm</div>
                             </div>
                             <div className="opening--time">
                             <div className="opening--day">Sun</div>
