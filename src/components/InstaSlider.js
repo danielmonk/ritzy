@@ -33,7 +33,7 @@ export default class SimpleSlider extends Component {
             <div className="content--wrapper content--wrapper--big">
               <div className="column centered">
                 <Fade>
-                  <h4>Follow us on <strong><a href="https://www.instagram.com/ritzybarber" target="_blank">Instagram</a><a className="insta" href="https://www.instagram.com/ritzybarber" target="_blank"></a></strong></h4>
+                  <h4>Follow us on <strong><a href="https://www.instagram.com/ritzybarbers" target="_blank">Instagram</a><a className="insta" href="https://www.instagram.com/ritzybarbers" target="_blank"></a></strong></h4>
                   <p>Keep up to date with all of our latest news.</p>
                 </Fade>
               </div>
